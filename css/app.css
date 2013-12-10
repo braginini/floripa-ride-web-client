@@ -1,0 +1,53 @@
+.routes {
+    padding-left: 3px;
+}
+
+.route-wrap{
+    margin: 0;
+    padding: 7px 9px;
+    /*color: #666666;*/
+}
+.route-info {
+    clear: right;
+    float: right;
+    margin-left: 7px;
+}
+
+.route {
+    border-bottom: 1px solid #E6E6E6;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0;
+    position: relative;
+    list-style: none outside none;
+}
+
+.suggestview .x-item-over{
+    background-color: #F5F7FC;
+}
+
+.suggestview .x-item-selected{
+    background: none repeat scroll 0 0 #EBF2FC;
+    border-left: 1px solid #EBEFF9;
+    border-right: 1px solid #EBEFF9;
+    font-weight: bold;
+}
+
+.x-view-selector {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    border:1px dotted;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter:alpha(opacity=50);
+    zoom:1;
+    background-color:#c3daf9;
+    border-color:#3399bb;
+}.ext-strict .ext-ie .x-tree .x-panel-bwrap{
+     position:relative;
+     overflow:hidden;
+ }
