@@ -1,3 +1,46 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-car:before {
+    content: "\e600";
+}
+.icon-bus:before {
+    content: "\e601";
+}
+.icon-walk:before {
+    content: "\e602";
+}
+
+a:hover,a:focus {
+    text-decoration: none;
+}
+
+a:focus, .btn:focus, div {
+    outline: none;
+}
+
 .routes {
     padding-left: 3px;
 }
@@ -51,3 +94,73 @@
      position:relative;
      overflow:hidden;
  }
+
+#sidebar .x-btn-group.transportes-group {
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+#sidebar .x-btn-group.transportes-group .x-btn {
+    padding: 5px 21px;
+    font-size: 24px;
+    border-radius: 0;
+    border-right: none;
+}
+
+#sidebar .x-btn-group.transportes-group .x-btn-inner.x-btn-inner-center {
+    width: 28px;
+}
+
+.btn-group-first {
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.btn-group-last {
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-right: 1px solid #E1E1E1 !important;
+}
+
+.pointa input,.pointb input{
+    height: 30px;
+    border-radius: 4px;
+    width: 230px !important;
+}
+
+.pointa label,.pointb label {
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+#change-a-b {
+    padding: 1px 0 0 1px;
+    margin: 5px;
+}
+
+#triptime {
+    margin-right: 30px;
+}
+
+#departdate {
+    float: right;
+}
+
+#departtime {
+    float: right;
+    margin-left: 20px;
+}
+
+#departdate .x-form-trigger-wrap,
+#departtime .x-form-trigger-wrap,
+#departdate .x-trigger-cell,
+#departtime .x-trigger-cell,
+#departdate input,
+#departtime input
+{
+    /*height: 20px;*/
+    border-radius: 8px;
+}

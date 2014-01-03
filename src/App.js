@@ -13,27 +13,95 @@ Ext.define('App',{
             Ext.Msg.alert(res.statusText,res.responseText);
         }, this);
 
+        var now = new Date();
+
         this.form = Ext.create('Ext.form.Panel',{
-            layout: 'form',
-            height: 120,
+            layout: {
+                type: 'table',
+                columns: 2
+            },
+            height: 190,
             defaultType: 'textfield',
             bodyPadding: 10,
+            border: false,
             fieldDefaults: {
                 labelWidth: 20
             },
             items: [{
+                colspan: 2,
+                cls: 'btn-group transportes-group',
+                xtype: 'buttongroup',
+                columns: 3,
+                border: false,
+                frame: false,
+                defaults: {
+                    //cls: 'btn',
+                    scale: 'medium',
+                    toggleGroup: 'transportes-group'
+                },
+                //title: 'Clipboard',
+                items: [{
+                    iconCls: 'icon-car',
+                    margin: '0 0px 0 0',
+                    cls: 'btn-group-first'
+                },{
+                    iconCls: 'icon-bus',
+                    pressed: true,
+                    listeners: {
+                        toggle: function(btn,pressed) {
+                            if(pressed) {
+                                Ext.getCmp('triptime').show();
+                            } else {
+                                Ext.getCmp('triptime').hide();
+                            }
+                        }
+                    }
+                },{
+                    iconCls: 'icon-walk',
+                    cls: 'btn-group-last'
+                }]
+            },{
                 fieldLabel: 'A',
+                cls: 'pointa',
                 name: 'departure',
                 allowBlank: false,
                 emptyText: 'Departure ...'
             },{
+                id:'change-a-b',
+                xtype:'button',
+                iconCls: 'fa fa-exchange',
+                cls: 'x-btn-default-toolbar-small',
+                rowspan: 2
+            },{
                 fieldLabel: 'B',
+                cls: 'pointb',
                 name: 'destination',
                 allowBlank: false,
                 emptyText: 'Destination ...'
-            }],
-            buttons: [{
-                text: 'Search',
+            },{
+                id: 'triptime',
+                xtype: 'container',
+                layout: 'column',
+                colspan: 2,
+                items: [{
+                    id: 'departtime',
+                    name: 'departtime',
+                    xtype: 'timefield',
+                    width: 100,
+                    value: now
+                },{
+                    id: 'departdate',
+                    name: 'departdate',
+                    xtype: 'datefield',
+                    width: 110,
+                    value: now
+                }]
+            },{
+                xtype: 'button',
+                cls: 'btn btn-primary',
+                margin: '10px 0 0 0',
+                style: 'float: right',
+                text: 'Get trip plan',
                 handler: this.search,
                 scope: this
             }]
@@ -65,6 +133,7 @@ Ext.define('App',{
         });
 
         this.configPanel = Ext.create('Ext.panel.Panel',{
+            id: 'sidebar',
             layout: 'anchor',
             align: 'stretch',
             region: 'west',
@@ -144,7 +213,8 @@ Ext.define('App',{
         var now = new Date();
         var departureTime = Ext.Date.add(now,Ext.Date.MINUTE,5);
         Ext.data.JsonP.request({
-            url: 'http://ec2-54-207-21-176.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
+            //url: 'http://ec2-54-207-21-176.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
+            url: 'http://dev:8080/opentripplanner-api-webapp/ws/plan',
             callbackKey: 'callback',
             async: false,
             timeout: 20000,
