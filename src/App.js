@@ -1,5 +1,6 @@
 Ext.define('App',{
     singleton: true,
+    mode: 'TRANSIT,WALK',
 
     constructor: function() {
         Ext.onReady(this.init,this);
@@ -8,6 +9,18 @@ Ext.define('App',{
 
     init: function() {
         Ext.tip.QuickTipManager.init();
+
+        this.markerWalk = L.AwesomeMarkers.icon({
+            prefix: 'icon',
+            icon: 'walk',
+            markerColor: 'blue'
+        });
+
+        this.markerBus = L.AwesomeMarkers.icon({
+            prefix: 'icon',
+            icon: 'bus',
+            markerColor: 'purple'
+        });
 
         Ext.Ajax.on('requestexception', function (con, res) {
             Ext.Msg.alert(res.statusText,res.responseText);
@@ -20,7 +33,7 @@ Ext.define('App',{
                 type: 'table',
                 columns: 2
             },
-            height: 190,
+            height: 200,
             defaultType: 'textfield',
             bodyPadding: 10,
             border: false,
@@ -43,13 +56,23 @@ Ext.define('App',{
                 items: [{
                     iconCls: 'icon-car',
                     margin: '0 0px 0 0',
-                    cls: 'btn-group-first'
+                    cls: 'btn-group-first',
+                    listeners: {
+                        scope: this,
+                        toggle: function(btn,pressed) {
+                            if(pressed) {
+                                this.mode = 'CAR';
+                            }
+                        }
+                    }
                 },{
                     iconCls: 'icon-bus',
                     pressed: true,
                     listeners: {
+                        scope: this,
                         toggle: function(btn,pressed) {
                             if(pressed) {
+                                this.mode = 'TRANSIT,WALK';
                                 Ext.getCmp('triptime').show();
                             } else {
                                 Ext.getCmp('triptime').hide();
@@ -58,7 +81,15 @@ Ext.define('App',{
                     }
                 },{
                     iconCls: 'icon-walk',
-                    cls: 'btn-group-last'
+                    cls: 'btn-group-last',
+                    listeners: {
+                        scope: this,
+                        toggle: function(btn,pressed) {
+                            if(pressed) {
+                                this.mode = 'WALK';
+                            }
+                        }
+                    }
                 }]
             },{
                 fieldLabel: 'A',
@@ -114,14 +145,14 @@ Ext.define('App',{
                 selectionchange: function(v,rs){
                     var r = rs[0];
                     if (r) {
-                        this.selectSuggestion('select', r.get('legs'));
+                        this.selectSuggestion('select', r.get('legs'), this.suggView.indexOf(r));
                     } else {
                         this.map.addRoute('select',false);
                     }
                 },
                 highlightitem: function(v,n){
                     var r = v.getRecord(n);
-                    this.selectSuggestion('highlight', r.get('legs'));
+                    this.selectSuggestion('highlight', r.get('legs'), v.indexOf(r));
                 },
                 unhighlightitem: function(v,n){
                     this.map.addRoute('highlight',false);
@@ -210,8 +241,11 @@ Ext.define('App',{
         var pointA = fieldA.latlngValue.lat + ',' + fieldA.latlngValue.lng;
         var pointB = fieldB.latlngValue.lat + ',' + fieldB.latlngValue.lng;
 
-        var now = new Date();
-        var departureTime = Ext.Date.add(now,Ext.Date.MINUTE,5);
+        var time = Ext.getCmp('departtime').getValue();
+        var now = Ext.getCmp('departdate').getValue();
+        now.setHours(time.getHours(),time.getMinutes());
+
+        var departureTime = Ext.Date.add(now,Ext.Date.MINUTE,0);
         Ext.data.JsonP.request({
             //url: 'http://ec2-54-207-21-176.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
             url: 'http://dev:8080/opentripplanner-api-webapp/ws/plan',
@@ -226,9 +260,9 @@ Ext.define('App',{
                 ui_date: Ext.Date.format(now,'d-n-Y'),// '10/3/2013',
                 arriveBy: 0,
                 time: Ext.Date.format(departureTime,'h:iA'),
-                mode: 'TRANSIT,WALK',
+                mode: this.mode,// 'TRANSIT,WALK',
                 optimize: 'QUICK',
-                maxWalkDistance: '840',
+                maxWalkDistance: this.mode == 'WALK' ? 100000 : 5000,
                 date: Ext.Date.format(departureTime,'Y-m-d'),
                 walkSpeed: '1.341'
             },
@@ -237,6 +271,7 @@ Ext.define('App',{
                 //todo handle errors sent by server
                 if(result.plan) {
                     this.suggView.store.loadData(result.plan.itineraries);
+                    this.suggView.setHeight(result.plan.itineraries.length * 52);
                 } else {
                     this.suggView.store.removeAll();
                 }
@@ -248,15 +283,40 @@ Ext.define('App',{
         });
     },
 
-    selectSuggestion: function(name,legs) {
+    selectSuggestion: function(name,legs,index) {
+        var opacity = 0.5;
         if(name == 'select') {
             this.showTripDescription(legs);
+            opacity = 0.8;
         }
         //var legs = rs[0].get('legs');
-        polylines = [];
+        var colors = ['#03f','#660099','#CC3366','#336633'];
+        var color = colors[index] || '#03f';
+        var polylines = [];
         for(var i=0;i<legs.length;i++) {
             var leg = legs[i];
-            var polyline = L.Polyline.fromEncoded(leg.legGeometry.points);
+            var opts = {
+                color: color,
+                opacity: opacity
+            };
+
+            var marker = null;
+
+            switch (leg.mode) {
+                case 'WALK':
+                    opts['dashArray'] = '10, 10';
+                    marker = this.markerWalk;
+                    break;
+                case 'BUS':
+                    marker = this.markerBus;
+                    break;
+            }
+            var polyline = L.Polyline.fromEncoded(leg.legGeometry.points,opts);
+            var firstLatLng = polyline._latlngs[0];
+
+            if(i > 0 && marker) {
+                polylines.push(L.marker(firstLatLng, {icon: marker, zIndexOffset: 1000 + i}));
+            }
             polylines.push(polyline);
         }
         this.map.addRoute(name,polylines);
