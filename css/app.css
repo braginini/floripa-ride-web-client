@@ -23,14 +23,50 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-car:before {
-    content: "\e600";
-}
 .icon-bus:before {
     content: "\e601";
 }
 .icon-walk:before {
     content: "\e602";
+}
+.icon-car:before {
+    content: "\e600";
+}
+.icon-turn-left:before {
+    content: "\e604";
+}
+.icon-turn-right:before {
+    content: "\e605";
+}
+.icon-turn-slight-left:before {
+    content: "\e607";
+}
+.icon-turn-slight-right:before {
+    content: "\e608";
+}
+.icon-turn-around:before {
+    content: "\e609";
+}
+.icon-turn-continue:before {
+    content: "\e60a";
+}
+.icon-turn-roundabout-first:before {
+    content: "\e60b";
+}
+.icon-turn-roundabout-second:before {
+    content: "\e60c";
+}
+.icon-turn-roundabout-third:before {
+    content: "\e60d";
+}
+.icon-turn-roundabout-far:before {
+    content: "\e606";
+}
+.icon-turn-sharp-left:before {
+    content: "\e60e";
+}
+.icon-turn-sharp-right:before {
+    content: "\e60f";
 }
 
 a:hover,a:focus {
@@ -43,6 +79,7 @@ a:focus, .btn:focus, div {
 
 .routes {
     padding-left: 3px;
+    margin: 0;
 }
 
 .first-route {
@@ -61,6 +98,10 @@ a:focus, .btn:focus, div {
     margin-left: 7px;
     text-align: right;
     font-size: 11px;
+}
+
+.route-info div {
+    color: darkgray;
 }
 
 .route-time {
@@ -182,6 +223,76 @@ a:focus, .btn:focus, div {
     border-radius: 8px;
 }
 
+.tripdescr {
+    font-size: 12px;
+}
+
+.tripdescr .endpoint {
+    margin: 10px 0 0 10px;
+}
+
+.tripdescr .endpointa {
+    border-bottom: 1px solid #EBEFF9;
+}
+
+.tripdescr .endpoint-icon {
+    margin: 0 0 0 10px;
+}
+
+.tripdescr .endpoint-name {
+    font-weight: bold;
+}
+
+.tripdescr .legdescr {
+    font-size: 12px;
+    border-bottom: 1px solid #EBEFF9;
+}
+
+.tripdescr .legduration {
+    margin: 2px 0 0 20px;
+    color: darkgray;
+}
+
+.tripdescr .legroute, .tripdescr .legname {
+    margin: 5px 0 0 20px;
+}
+
+.tripdescr .legname {
+    font-weight: bold;
+}
+
+.tripdescr .steproute, .tripdescr .stepname {
+    margin: 5px 0 0 0;
+}
+
+.tripdescr .stepdistance {
+    float: right;
+    color: darkgray;
+    margin: 2px;
+}
+
+.direction-icon {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: darkgray;
+}
+
+.rotate45 {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rotate315 {
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
 /****************** Bus agency styles *******************/
 .agency_TranSol {
     color: #3399CC;

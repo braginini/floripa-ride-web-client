@@ -1,6 +1,6 @@
 Ext.define('App',{
     singleton: true,
-    mode: 'TRANSIT,WALK',
+    mode: 'BUS',
 
     constructor: function() {
         Ext.onReady(this.init,this);
@@ -72,7 +72,7 @@ Ext.define('App',{
                         scope: this,
                         toggle: function(btn,pressed) {
                             if(pressed) {
-                                this.mode = 'TRANSIT,WALK';
+                                this.mode = 'BUS';
                                 Ext.getCmp('triptime').show();
                             } else {
                                 Ext.getCmp('triptime').hide();
@@ -139,20 +139,20 @@ Ext.define('App',{
         });
 
         this.suggView = Ext.create('Ride.SuggestedView',{
-            height: 150,
+            height: 100,
             listeners: {
                 scope: this,
                 selectionchange: function(v,rs){
                     var r = rs[0];
                     if (r) {
-                        this.selectSuggestion('select', r.get('legs'), this.suggView.indexOf(r));
+                        this.selectSuggestion('select', this.suggView.indexOf(r));
                     } else {
                         this.map.addRoute('select',false);
                     }
                 },
                 highlightitem: function(v,n){
                     var r = v.getRecord(n);
-                    this.selectSuggestion('highlight', r.get('legs'), v.indexOf(r));
+                    this.selectSuggestion('highlight', v.indexOf(r));
                 },
                 unhighlightitem: function(v,n){
                     this.map.addRoute('highlight',false);
@@ -161,6 +161,7 @@ Ext.define('App',{
         });
 
         this.tripDescriptionView = Ext.create('Ride.TripDescriptionView',{
+            margin: '5px 0 0 0'
         });
 
         this.configPanel = Ext.create('Ext.panel.Panel',{
@@ -260,7 +261,7 @@ Ext.define('App',{
                 ui_date: Ext.Date.format(now,'d-n-Y'),// '10/3/2013',
                 arriveBy: 0,
                 time: Ext.Date.format(departureTime,'h:iA'),
-                mode: this.mode,// 'TRANSIT,WALK',
+                mode: this.mode == 'BUS' ? 'TRANSIT,WALK' : this.mode,
                 optimize: 'QUICK',
                 maxWalkDistance: this.mode == 'WALK' ? 100000 : 5000,
                 date: Ext.Date.format(departureTime,'Y-m-d'),
@@ -270,9 +271,12 @@ Ext.define('App',{
             success: function (result, request) {
                 //todo handle errors sent by server
                 if(result.plan) {
+                    this.plan = result.plan;
                     this.suggView.store.loadData(result.plan.itineraries);
-                    this.suggView.setHeight(result.plan.itineraries.length * 52);
+                    this.suggView.setHeight(this.suggView.getEl().child('ol').getHeight());
+                    //this.suggView.setHeight(result.plan.itineraries.length * 52);
                 } else {
+                    delete this.plan;
                     this.suggView.store.removeAll();
                 }
             },
@@ -283,18 +287,19 @@ Ext.define('App',{
         });
     },
 
-    selectSuggestion: function(name,legs,index) {
+    selectSuggestion: function(name,index) {
         var opacity = 0.5;
+        var route = this.plan.itineraries[index];
         if(name == 'select') {
-            this.showTripDescription(legs);
+            this.showTripDescription(index);
             opacity = 0.8;
         }
-        //var legs = rs[0].get('legs');
+
         var colors = ['#03f','#660099','#CC3366','#336633'];
         var color = colors[index] || '#03f';
         var polylines = [];
-        for(var i=0;i<legs.length;i++) {
-            var leg = legs[i];
+        for(var i=0;i<route.legs.length;i++) {
+            var leg = route.legs[i];
             var opts = {
                 color: color,
                 opacity: opacity
@@ -314,7 +319,7 @@ Ext.define('App',{
             var polyline = L.Polyline.fromEncoded(leg.legGeometry.points,opts);
             var firstLatLng = polyline._latlngs[0];
 
-            if(i > 0 && marker) {
+            if(i && marker) {
                 polylines.push(L.marker(firstLatLng, {icon: marker, zIndexOffset: 1000 + i}));
             }
             polylines.push(polyline);
@@ -322,10 +327,7 @@ Ext.define('App',{
         this.map.addRoute(name,polylines);
     },
 
-    showTripDescription: function(legs) {
-        legs = Ext.Array.map(legs,function(l) {
-            return l
-        });
-        this.tripDescriptionView.store.loadData(legs);
+    showTripDescription: function(index) {
+        this.tripDescriptionView.loadPlan(this.plan,index,this.mode);
     }
 });

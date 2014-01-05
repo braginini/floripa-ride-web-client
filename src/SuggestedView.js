@@ -45,10 +45,10 @@ Ext.define('Ride.SuggestedView' , {
             '<li class="route {[ xindex == 1 ? \'first-route\' : \'\' ]}">',
             '<div class="route-wrap">',
                 '<div class="route-info">' +
-                    '<span>{duration}</span>{transfers:this.formatTransfers}' +
+                    '<span>{duration}</span><div>{legs:this.calcDistance}</div>' +
                 '</div>' +
                 '<div>{legs:this.formatLegs}</div>' +
-                '<div class="route-time">{startTime:date("h:i a")} - {endTime:date("h:i a")}</div>',
+                '<div class="route-time">{startTime:date("h:i a")} - {endTime:date("h:i a")}  {transfers:this.formatTransfers}</div>',
                 '<div class="x-clear"></div>' +
             '</div>',
             '</li>',
@@ -75,11 +75,22 @@ Ext.define('Ride.SuggestedView' , {
                 return res.join('<i class="fa fa-arrow-right route-arrow"></i>');
             },
             formatTransfers: function(transfers) {
-                if(transfers) {
+                if(App.mode=='BUS' && transfers) {
                     transfers =  transfers > 1 ? transfers + 'transfers' : '1 transfer';
-                    return '<br><span style="color: darkgray">'+transfers+'</span>';
+                    return '('+transfers+')';
                 }
                 return '';
+            },
+            calcDistance: function(legs) {
+                var distance = 0;
+                for(var i=0;i<legs.length;i++) {
+                    distance += legs[i].distance;
+                }
+                if (distance > 1000) {
+                    distance = distance / 1000;
+                    return distance.toFixed(1) + ' km.';
+                }
+                return distance.toFixed() + ' m.';
             }
         });
         this.callParent();
