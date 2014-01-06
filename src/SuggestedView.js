@@ -60,16 +60,9 @@ Ext.define('Ride.SuggestedView' , {
                 var res = [];
                 for(var i=0;i<legs.length;i++) {
                     var l = legs[i];
-                    switch (l.mode) {
-                        case 'WALK':
-                            res.push('<i class="icon-walk"></i>');
-                            break;
-                        case 'BUS':
-                            res.push('<span class="agency_'+ l.agencyId+'"><i class="icon-bus"></i><span style="margin-left: 2px">'+ l.route+'</span></span>');
-                            break;
-                        case 'CAR':
-                            res.push('<i class="icon-car"></i>');
-                            break;
+                    var icon = getModelIcon(l);
+                    if(icon) {
+                        res.push(icon);
                     }
                 }
                 return res.join('<i class="fa fa-arrow-right route-arrow"></i>');

@@ -28,14 +28,29 @@ Ext.define('TripDescription', {
     ]
 });
 
+Ext.define('StepDescription', {
+    extend: 'Ext.data.Model',
+    fields: [
+        {name: 'mode',   type: 'string'},
+        {name: 'distance',   type: 'float'},
+        {name: 'relativeDirection', type: 'string'},
+        {name: 'absoluteDirection', type: 'string'},
+        {name: 'streetName', type: 'string'},
+        {name: 'exit', type: 'int'},
+        {name: 'relativeDirection', type: 'string'},
+        {name: 'lon', type: 'float'},
+        {name: 'lat', type: 'float'}
+    ]
+});
+
 Ext.define('Ride.TripDescriptionView' , {
     extend: 'Ext.view.View',
     multiSelect: true,
-    height: 310,
+    //height: 310,
     trackOver: true,
     cls: 'tripdescrview',
     overItemCls: 'x-item-over',
-    itemSelector: 'div.route-wrap',
+    itemSelector: 'tbody.trippoint',
     emptyText: 'No routes find',
     autoScroll: true,
 
@@ -48,24 +63,37 @@ Ext.define('Ride.TripDescriptionView' , {
 
         this.tpl = new Ext.XTemplate(
             '<table class="tripdescr">',
-            '<tbody class="endpoint endpointa"><tr>',
-                '<td><img src="images/marker_greenA.png" class="endpoint-icon" align="middle"></td>',
-                '<td><div class="endpoint-name">{[this.getFromPoint()]}</div></td>',
-            '</tr></tbody>',
             '<tpl for=".">',
+                '<tpl if="xindex==1">',
+                    '<tbody class="trippoint endpoint endpointa">' +
+                        '<tr>',
+                            '<td><img src="images/marker_greenA.png" class="endpoint-icon" align="middle"></td>',
+                            '<td><div class="endpoint-name">{[this.getFromPoint()]}</div></td>',
+                        '</tr>' +
+                    '</tbody>',
+                '</tpl>',
+                '<tpl if="xindex==xcount">',
+                    '<tbody class="trippoint endpoint">',
+                        '<tr>',
+                            '<td><img src="images/marker_greenB.png" class="endpoint-icon" align="middle"></td>',
+                            '<td><div class="endpoint-name">{[this.getToPoint()]}</div></td>',
+                        '</tr>',
+                    '</tbody>',
+                '</tpl>',
+                '{% if(xindex==xcount || xindex==1) continue; %}',
+
                 '<tpl if="this.getMode() == \'BUS\'">',
-                    '<tbody class="legdescr">',
+                    '<tbody class="trippoint legdescr">',
                     '<tr>',
                         '<tpl if="mode == \'WALK\'">',
-        //                    '<td>|</td>',
                             '<td colspan="2">',
-                                '<div class="legroute"><i class="icon-walk"></i> Walk to <tpl if="xindex < xcount-1">Bus.st </tpl>{to.name}</div>',
+                                '<div class="legroute">{[xindex-1]}. <i class="icon-walk"></i> Walk to <tpl if="xindex < xcount-1">Bus.st </tpl>{to.name}</div>',
                                 '<div class="legduration">About {duration} ({distance:this.formatDistance})</div>',
                             '</td>',
                         '</tpl>',
                         '<tpl if="mode == \'BUS\'">',
                             '<td colspan="2">',
-                                '<div class="legname">{from.name}</div>',
+                                '<div class="legname">{[xindex-1]}. {from.name}</div>',
                                 '<div class="legroute"><span class="agency_{agencyId}"><i class="icon-bus"></i> {route}</span> Bus towards {to.name}</div>',
                                 '<div class="legduration">{startTime:date("g:i a")} - {endTime:date("g:i a")} ({duration}, {distance:this.formatDistance})</div>',
                             '</td>',
@@ -76,42 +104,33 @@ Ext.define('Ride.TripDescriptionView' , {
 
 
                 '<tpl if="this.getMode() == \'WALK\'">',
-                '{[this.setLastDirection(null)]}',
-                    '<tpl for="steps">',
-                        '<tbody class="legdescr">',
+//                    '<tpl for="steps">',
+                        '<tbody class="trippoint legdescr">',
                         '<tr>',
                             '<td><i class="{[this.getDirectionIcon(values.relativeDirection,values.exit)]} direction-icon"></i> </td>',
-//                            '<td>{relativeDirection}</td>',
                             '<td>',
-                                '<div class="stepname">{[xindex]}. {[this.formatWalkDirection(values,xindex)]}</div>',
+                                '<div class="stepname">{[xindex-1]}. {[this.formatWalkDirection(values,xindex-1)]}</div>',
                                 '<div class="stepdistance">{distance:this.formatDistance}</div>',
                             '</td>',
                         '</tr>',
                         '</tbody>',
-                    '{[this.setLastDirection(values.relativeDirection)]}',
-                    '</tpl>',
+//                    '</tpl>',
                 '</tpl>',
 
                 '<tpl if="this.getMode() == \'CAR\'">',
-                    '<tpl for="steps">',
-                        '<tbody class="legdescr">',
+//                    '<tpl for="steps">',
+                        '<tbody class="trippoint legdescr">',
                             '<tr>',
                                 '<td><i class="{[this.getDirectionIcon(values.relativeDirection,values.exit)]} direction-icon"></i> </td>',
                                 '<td>',
-                                    '<div class="stepname">{[xindex]}. {[this.formatCarDirection(values,xindex)]}</div>',
+                                    '<div class="stepname">{[xindex-1]}. {[this.formatCarDirection(values,xindex-1)]}</div>',
                                     '<div class="stepdistance">{distance:this.formatDistance}</div>',
                                 '</td>',
                             '</tr>',
                         '</tbody>',
-                    '</tpl>',
+//                    '</tpl>',
                 '</tpl>',
-
-
             '</tpl>',
-            '<tbody class="endpoint"><tr>',
-                '<td><img src="images/marker_greenB.png" class="endpoint-icon" align="middle"></td>',
-                '<td><div class="endpoint-name">{[this.getToPoint()]}</div></td>',
-            '</tr></tbody>',
             '</table>',
             '<div class="x-clear"></div>'
             ,{
@@ -212,43 +231,10 @@ Ext.define('Ride.TripDescriptionView' , {
                     return str;
                 },
                 getDirectionIcon: function(direction,exit) {
-                    switch (direction) {
-                        case 'LEFT':
-                            return 'icon-turn-left';
-                        case 'RIGHT':
-                            return 'icon-turn-right';
-                        case 'SLIGHTLY_LEFT':
-                            return 'icon-turn-slight-left';
-                        case 'SLIGHTLY_RIGHT':
-                            return 'icon-turn-slight-right';
-                        case 'HARD_LEFT':
-                            return 'icon-turn-sharp-left';
-                        case 'HARD_RIGHT':
-                            return 'icon-turn-sharp-right';
-                        case 'CIRCLE_CLOCKWISE':
-                            if(exit == 1) {
-                                return 'icon-turn-roundabout-first';
-                            } else if(exit == 2) {
-                                return 'icon-turn-roundabout-second';
-                            } else if(exit == 3) {
-                                return 'icon-turn-roundabout-third';
-                            }
-                            return 'icon-turn-roundabout-far';
-                    }
-                    return '';
-                },
-                setLastDirection: function(direction) {
-                    me.lastDirection = direction;
+                    return getDirectionIcon(direction,exit);
                 }
             });
         this.callParent();
-    },
-    listeners: {
-        selectionchange2: function(dv, nodes ){
-            var l = nodes.length,
-                s = l !== 1 ? 's' : '';
-            this.up('panel').setTitle('Simple DataView (' + l + ' item' + s + ' selected)');
-        }
     },
 
     loadPlan: function(plan,index,mode) {
@@ -256,6 +242,47 @@ Ext.define('Ride.TripDescriptionView' , {
         this.plan = plan;
         this.route = this.plan.itineraries[index];
 
-        this.store.loadData(this.route.legs);
+        var i,legs;
+        this.store.removeAll(true);
+        if(mode == 'BUS') {
+            legs = Ext.clone(this.route.legs);
+            this.store.proxy.setModel('TripDescription',true);
+
+            legs.unshift({
+                from: plan.from,
+                to: plan.from,
+                name: plan.from.name,
+                mode: 'endpoint'
+            });
+            legs.push({
+                from: plan.to,
+                to: plan.to,
+                name: plan.to.name,
+                mode: 'endpoint'
+            });
+        } else {
+            legs = [];
+            for(i=0;i < this.route.legs.length;i++) {
+                legs = legs.concat(this.route.legs[i].steps);
+                break;
+            }
+
+            legs.unshift({
+                lat: plan.from.lat,
+                lon: plan.from.lon,
+                streetName: plan.from.name,
+                mode: 'endpoint'
+            });
+            legs.push({
+                lat: plan.to.lat,
+                lon: plan.to.lon,
+                streetName: plan.to.name,
+                mode: 'endpoint'
+            });
+            this.store.proxy.setModel('StepDescription',true);
+        }
+
+        this.store.model = this.store.proxy.model;
+        this.store.loadData(legs);
     }
 });

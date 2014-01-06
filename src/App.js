@@ -161,17 +161,79 @@ Ext.define('App',{
         });
 
         this.tripDescriptionView = Ext.create('Ride.TripDescriptionView',{
-            margin: '5px 0 0 0'
+            margin: '5px 0 0 0',
+            autoScroll: true,
+            listeners: {
+                scope: this,
+                highlightitem: function(v,n){
+                    if(this.descriptionPopup) {
+                        return;
+                    }
+
+                    var r = v.getRecord(n), from, content;
+
+                    if(this.mode == 'BUS') {
+                        from = r.get('from');
+                        if(!from) {
+                            return;
+                        }
+                        content = getModelIcon(r.data) + ' ' + from.name;
+                        from = [from.lat,from.lon];
+                    } else {
+                        from = [r.get('lat'), r.get('lon')];
+                        content = "<i class='"+getDirectionIcon(r.get('relativeDirection'), r.get('exit'), true)+" popup-dir-icon'></i> "+r.get('streetName');
+                    }
+
+                    this.descriptionPopup = L.popup({offset:[0,2], closeButton: false})
+                        .setLatLng(from)
+                        .setContent(content)
+                        .openOn(this.map.map);
+                },
+                unhighlightitem: function(v,n){
+                    if(this.descriptionPopup) {
+                        this.descriptionPopup._close();
+                        delete this.descriptionPopup;
+                    }
+
+                },
+                select: function(v,r) {
+                    if(this.mode == 'BUS') {
+                        var from = r.get('from');
+                        if(from) {
+                            this.map.map.setView([from.lat,from.lon]);
+                        }
+                    } else {
+                        this.map.map.setView([r.data.lat, r.data.lon]);
+                    }
+                }
+            }
         });
 
-        this.configPanel = Ext.create('Ext.panel.Panel',{
+        this.sidePanel = Ext.create('Ext.panel.Panel',{
             id: 'sidebar',
-            layout: 'anchor',
+            layout: 'border',
             align: 'stretch',
             region: 'west',
             collapsible: true,
             width: 300,
-            items: [this.form,this.suggView,this.tripDescriptionView]
+            items: [{
+                xtype: 'container',
+                layout: 'anchor',
+                region: 'north',
+                height: 300,
+                items: [this.form,this.suggView]
+            },{
+                xtype: 'container',
+                layout: 'fit',
+                region: 'center',
+                //autoScroll: true,
+                items: [this.tripDescriptionView]
+            }],
+            listeners: {
+                afterrender: function(p) {
+                    p.el.child('div.x-panel-body').removeCls('x-border-layout-ct');
+                }
+            }
         });
 
         this.map = Ext.create('Ext.ux.LeafletMap',{
@@ -189,7 +251,7 @@ Ext.define('App',{
 
         this.viewport = Ext.create('Ext.Viewport',{
             layout: 'border',
-            items: [this.configPanel,this.map]
+            items: [this.sidePanel,this.map]
         });
         this.initApp();
     },
@@ -273,7 +335,7 @@ Ext.define('App',{
                 if(result.plan) {
                     this.plan = result.plan;
                     this.suggView.store.loadData(result.plan.itineraries);
-                    this.suggView.setHeight(this.suggView.getEl().child('ol').getHeight());
+                    this.suggView.up().setHeight(this.suggView.getEl().child('ol').getHeight()+200);
                     //this.suggView.setHeight(result.plan.itineraries.length * 52);
                 } else {
                     delete this.plan;
@@ -331,3 +393,48 @@ Ext.define('App',{
         this.tripDescriptionView.loadPlan(this.plan,index,this.mode);
     }
 });
+
+
+function getDirectionIcon (direction,exit,all_icons) {
+    switch (direction) {
+        case 'LEFT':
+            return 'icon-turn-left';
+        case 'RIGHT':
+            return 'icon-turn-right';
+        case 'SLIGHTLY_LEFT':
+            return 'icon-turn-slight-left';
+        case 'SLIGHTLY_RIGHT':
+            return 'icon-turn-slight-right';
+        case 'HARD_LEFT':
+            return 'icon-turn-sharp-left';
+        case 'HARD_RIGHT':
+            return 'icon-turn-sharp-right';
+        case 'CONTINUE':
+            if(all_icons) {
+                return 'icon-turn-continue';
+            }
+            break;
+        case 'CIRCLE_CLOCKWISE':
+            if(exit == 1) {
+                return 'icon-turn-roundabout-first';
+            } else if(exit == 2) {
+                return 'icon-turn-roundabout-second';
+            } else if(exit == 3) {
+                return 'icon-turn-roundabout-third';
+            }
+            return 'icon-turn-roundabout-far';
+    }
+    return '';
+}
+
+function getModelIcon(l) {
+    switch (l.mode) {
+        case 'WALK':
+            return '<i class="icon-walk"></i>';
+        case 'BUS':
+            return '<span class="agency_'+ l.agencyId+'"><i class="icon-bus"></i><span style="margin-left: 2px">'+ l.route+'</span></span>';
+        case 'CAR':
+            return '<i class="icon-car"></i>';
+    }
+    return '';
+}

@@ -225,6 +225,17 @@ a:focus, .btn:focus, div {
 
 .tripdescr {
     font-size: 12px;
+    cursor: pointer;
+}
+
+.tripdescr .x-item-over{
+    background-color: #F5F7FC;
+}
+
+.tripdescr .x-item-selected{
+    background: none repeat scroll 0 0 #EBF2FC;
+    /*border-left: 1px solid #EBEFF9;*/
+    /*border-right: 1px solid #EBEFF9;*/
 }
 
 .tripdescr .endpoint {
@@ -232,7 +243,7 @@ a:focus, .btn:focus, div {
 }
 
 .tripdescr .endpointa {
-    border-bottom: 1px solid #EBEFF9;
+    /*border-bottom: 1px solid #EBEFF9;*/
 }
 
 .tripdescr .endpoint-icon {
@@ -275,6 +286,12 @@ a:focus, .btn:focus, div {
     font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
+    color: darkgray;
+}
+
+.popup-dir-icon {
+    font-size: 16px;
+    font-weight: bold;
     color: darkgray;
 }
 
