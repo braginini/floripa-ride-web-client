@@ -51,7 +51,7 @@ Ext.define('Ride.TripDescriptionView' , {
     cls: 'tripdescrview',
     overItemCls: 'x-item-over',
     itemSelector: 'tbody.trippoint',
-    emptyText: 'No routes find',
+    //emptyText: 'No routes find',
     autoScroll: true,
 
     initComponent: function() {

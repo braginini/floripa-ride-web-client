@@ -28,6 +28,23 @@ Ext.define('App',{
 
         var now = new Date();
 
+        var me = this;
+        var checkToggle = function (btn) {
+            var pressed = false, btnGroup = me.form.down('buttongroup');
+            btnGroup.items.each(function(btn){
+                if(btn.pressed) {
+                    pressed = true;
+                    return false;
+                }
+            });
+
+            if(!pressed) {
+                btn.toggle();
+            }
+
+            return pressed;
+        };
+
         this.form = Ext.create('Ext.form.Panel',{
             layout: {
                 type: 'table',
@@ -62,6 +79,9 @@ Ext.define('App',{
                         toggle: function(btn,pressed) {
                             if(pressed) {
                                 this.mode = 'CAR';
+                                this.search();
+                            } else {
+                                checkToggle(btn);
                             }
                         }
                     }
@@ -74,8 +94,11 @@ Ext.define('App',{
                             if(pressed) {
                                 this.mode = 'BUS';
                                 Ext.getCmp('triptime').show();
+                                this.search();
                             } else {
-                                Ext.getCmp('triptime').hide();
+                                if(checkToggle(btn)) {
+                                    Ext.getCmp('triptime').hide();
+                                }
                             }
                         }
                     }
@@ -87,6 +110,9 @@ Ext.define('App',{
                         toggle: function(btn,pressed) {
                             if(pressed) {
                                 this.mode = 'WALK';
+                                this.search();
+                            } else {
+                                checkToggle(btn);
                             }
                         }
                     }
@@ -129,6 +155,7 @@ Ext.define('App',{
                 }]
             },{
                 xtype: 'button',
+                id: 'searchbtn',
                 cls: 'btn btn-primary',
                 margin: '10px 0 0 0',
                 style: 'float: right',
@@ -148,6 +175,7 @@ Ext.define('App',{
                         this.selectSuggestion('select', this.suggView.indexOf(r));
                     } else {
                         this.map.addRoute('select',false);
+                        this.tripDescriptionView.store.removeAll();
                     }
                 },
                 highlightitem: function(v,n){
@@ -280,6 +308,7 @@ Ext.define('App',{
                 field.setValue(results[0].formatted_address);
             }
         });
+        this.search();
     },
 
     geocode: function(latlng,callback,scope) {
@@ -301,12 +330,21 @@ Ext.define('App',{
         var fieldA = this.form.getForm().findField('departure');
         var fieldB = this.form.getForm().findField('destination');
 
+        if(!fieldA.latlngValue || !fieldB.latlngValue) {
+            return;
+        }
+
         var pointA = fieldA.latlngValue.lat + ',' + fieldA.latlngValue.lng;
         var pointB = fieldB.latlngValue.lat + ',' + fieldB.latlngValue.lng;
 
         var time = Ext.getCmp('departtime').getValue();
         var now = Ext.getCmp('departdate').getValue();
         now.setHours(time.getHours(),time.getMinutes());
+
+        var searchBtn = Ext.getCmp('searchbtn');
+        searchBtn.disable();
+        this.suggView.store.removeAll();
+        this.suggView.el.mask('Loading...');
 
         var departureTime = Ext.Date.add(now,Ext.Date.MINUTE,0);
         Ext.data.JsonP.request({
@@ -331,12 +369,15 @@ Ext.define('App',{
             },
 
             success: function (result, request) {
-                //todo handle errors sent by server
+                //this.suggView.el.unmask();
+                searchBtn.enable();
+
                 if(result.plan) {
                     this.plan = result.plan;
                     this.suggView.store.loadData(result.plan.itineraries);
                     this.suggView.up().setHeight(this.suggView.getEl().child('ol').getHeight()+200);
                     //this.suggView.setHeight(result.plan.itineraries.length * 52);
+                    this.suggView.getSelectionModel().select(0)
                 } else {
                     delete this.plan;
                     this.suggView.store.removeAll();
