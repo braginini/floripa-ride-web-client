@@ -180,10 +180,16 @@ a:focus, .btn:focus, div {
     border-right: 1px solid #E1E1E1 !important;
 }
 
-.pointa input,.pointb input{
-    height: 30px;
+.pointa input,.pointb input {
     border-radius: 4px;
+    border-width: 1px !important;
+    height: 30px !important;
     width: 230px !important;
+}
+
+.pointa .x-form-trigger-wrap,
+.pointb .x-form-trigger-wrap {
+    border-width: 0 !important;
 }
 
 .pointa label,.pointb label {
@@ -309,6 +315,22 @@ a:focus, .btn:focus, div {
     -webkit-transform: rotate(315deg);
     -o-transform: rotate(315deg);
     transform: rotate(315deg);
+}
+
+.address-item {
+    width: 100%;
+    font-weight: bold;
+}
+
+.location-item {
+    color: darkgray;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.location-item div {
+    float: right;
+    font-weight: normal;
 }
 /****************** Bus agency styles *******************/
 .agency_TranSol {

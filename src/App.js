@@ -118,11 +118,18 @@ Ext.define('App',{
                     }
                 }]
             },{
+                xtype: 'addressfield',
                 fieldLabel: 'A',
                 cls: 'pointa',
                 name: 'departure',
                 allowBlank: false,
-                emptyText: 'Departure ...'
+                emptyText: 'Departure ...',
+                listeners: {
+                    scope: me,
+                    located: function(cb) {
+                        this.select('destination',cb.latlngValue);
+                    }
+                }
             },{
                 id:'change-a-b',
                 xtype:'button',
@@ -130,11 +137,18 @@ Ext.define('App',{
                 cls: 'x-btn-default-toolbar-small',
                 rowspan: 2
             },{
+                xtype: 'addressfield',
                 fieldLabel: 'B',
                 cls: 'pointb',
                 name: 'destination',
                 allowBlank: false,
-                emptyText: 'Destination ...'
+                emptyText: 'Destination ...',
+                listeners: {
+                    scope: me,
+                    located: function(cb) {
+                        this.select('departure',cb.latlngValue);
+                    }
+                }
             },{
                 id: 'triptime',
                 xtype: 'container',
@@ -269,10 +283,10 @@ Ext.define('App',{
             listeners: {
                 scope: this,
                 selectdestination: function(latlng) {
-                    this.select('destination',latlng);
+                    this.select('destination',latlng,true);
                 },
                 selectdeparture: function(latlng) {
-                    this.select('departure',latlng);
+                    this.select('departure',latlng, true);
                 }
             }
         });
@@ -289,7 +303,7 @@ Ext.define('App',{
         Ext.fly('loading').remove();
     },
 
-    select: function(direction,latlng) {
+    select: function(direction,latlng,set_value) {
         var me = this;
         var name = direction + 'Marker';
         if(this[name]) {
@@ -300,14 +314,10 @@ Ext.define('App',{
         this[name] = L.marker([latlng.lat, latlng.lng],{icon:icon});
         this[name].addTo(this.map.getMap());
 
-        var field = me.form.getForm().findField(direction);
-        field.setValue(latlng);
-        field.latlngValue = latlng;
-        this.getGeocoder().geocode({'latLng': latlng}, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK && results.length) {
-                field.setValue(results[0].formatted_address);
-            }
-        });
+        if(set_value) {
+            var field = me.form.getForm().findField(direction);
+            field.setLatLngValue(latlng);
+        }
         this.search();
     },
 
@@ -385,7 +395,10 @@ Ext.define('App',{
             },
 
             failure: function (result, request) {
-                alert("failed");
+                delete this.plan;
+                searchBtn.enable();
+                this.suggView.store.removeAll();
+                alert(result);
             }
         });
     },

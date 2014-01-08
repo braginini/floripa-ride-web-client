@@ -19,8 +19,7 @@ Ext.define('Suggestion', {
         {name: 'startTime',   type: 'date', dateFormat: 'time',convert2: function(v) {return Math.round(v/1000)}},
         {name: 'endTime',   type: 'date', dateFormat: 'time',convert2: function(v) {return Math.round(v/1000)}},
         {name: 'transfers', type: 'int'},
-        {name: 'legs', type: 'raw'},
-        {}
+        {name: 'legs', type: 'raw'}
     ]
 });
 
