@@ -378,8 +378,7 @@ Ext.define('App',{
 
         var departureTime = Ext.Date.add(now,Ext.Date.MINUTE,0);
         Ext.data.JsonP.request({
-            //url: 'http://ec2-54-207-21-176.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
-            url: 'http://dev:8080/opentripplanner-api-webapp/ws/plan',
+            url: Ride.Config.endpoints.tripplanner,
             callbackKey: 'callback',
             async: false,
             timeout: 20000,
