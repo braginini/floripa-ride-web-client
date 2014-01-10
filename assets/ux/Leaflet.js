@@ -194,7 +194,7 @@ Ext.define('Ext.ux.LeafletMap', {
         if (leafletRef == null){
             this.update('No leaflet library loaded');
         } else {
-            var map = L.map(this.getId(),{
+            var map = L.map(this.getId(),Ext.apply(this.mapOptions,{
                 contextmenu: true,
                 contextmenuWidth: 140,
                 contextmenuItems: [{
@@ -207,19 +207,11 @@ Ext.define('Ext.ux.LeafletMap', {
                     callback: function(opts) {
                         me.fireEvent('selectdestination',opts.latlng);
                     }
-                }, '-', {
-                    text: 'Zoom in',
-                    //icon: 'images/zoom-in.png',
-                    //callback: zoomIn
-                }, {
-                    text: 'Zoom out',
-                    //icon: 'images/zoom-out.png',
-                    //callback: zoomOut
                 }]
-            });
+            }));
 
-            if (!map.restoreView()) {
-                map.setView([-27.58, -48.52], 15);
+            if (!map.restoreView() && this.mapOptions.initialCenter) {
+                map.setView(this.mapOptions.initialCenter, 15);
             }
 
             var osm = L.tileLayer(me.tileLayerUrl, me.tileLayerOptions);
@@ -240,18 +232,6 @@ Ext.define('Ext.ux.LeafletMap', {
             //L.tileLayer(this.tileLayerUrl, this.tileLayerOptions).addTo(map);
 
             this.setMap(map);
-
-            this.markerIconA = L.icon({
-                iconUrl: 'images/marker_greenA.png',
-                iconSize: [20, 34],
-                iconAnchor: [10,34]
-            });
-
-            this.markerIconB = L.icon({
-                iconUrl: 'images/marker_greenB.png',
-                iconSize: [20, 34],
-                iconAnchor: [10,34]
-            });
         }
     },
 

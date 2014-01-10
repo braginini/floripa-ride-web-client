@@ -10,6 +10,18 @@ Ext.define('App',{
     init: function() {
         Ext.tip.QuickTipManager.init();
 
+        this.markerIconA = L.icon({
+            iconUrl: 'images/marker_greenA.png',
+            iconSize: [20, 34],
+            iconAnchor: [10,34]
+        });
+
+        this.markerIconB = L.icon({
+            iconUrl: 'images/marker_greenB.png',
+            iconSize: [20, 34],
+            iconAnchor: [10,34]
+        });
+
         this.markerWalk = L.AwesomeMarkers.icon({
             prefix: 'icon',
             icon: 'walk',
@@ -300,6 +312,14 @@ Ext.define('App',{
 
         this.map = Ext.create('Ext.ux.LeafletMap',{
             region: 'center',
+            mapOptions: {
+                initialCenter: [-27.592968,-48.551674],
+                minZoom: 11,
+                maxBounds: [
+                    [-27.367499,-48.598709],
+                    [-27.866396,-48.350143]
+                ]
+            },
             listeners: {
                 scope: this,
                 selectdestination: function(latlng) {
@@ -330,7 +350,7 @@ Ext.define('App',{
             this.map.getMap().removeLayer(this[name]);
         }
 
-        var icon = direction == 'departure' ? this.map.markerIconA : this.map.markerIconB;
+        var icon = direction == 'departure' ? this.markerIconA : this.markerIconB;
         this[name] = L.marker([latlng.lat, latlng.lng],{icon:icon});
         this[name].addTo(this.map.getMap());
 
