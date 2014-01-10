@@ -69,25 +69,6 @@ Ext.define('Ride.AddressField',{
         this.mon(this,'afterrender',function() {
             me.triggerWrap.dom.removeAttribute('style');
         },this,{delay: 200});
-
-        this.mon(this,'change',function(cb,new_val,old_val){
-            var clear = true;
-            if(new_val) {
-                var record = me.findRecordByValue(new_val);
-                if(record) {
-                    clear = false;
-                    var l = record.get('geometry').location;
-                    this.latlngValue = {
-                        lat: l.b,
-                        lng: l.d
-                    };
-                    this.fireEvent('located',this);
-                }
-            }
-            if(clear) {
-                this.latlngValue = null;
-            }
-        },this);
     },
 
     doRemoteQuery: function(queryPlan) {
@@ -109,21 +90,48 @@ Ext.define('Ride.AddressField',{
         });
     },
 
+    setValue: function(value) {
+        this.callParent(this,value);
+        var clear = true;
+        if(value) {
+            var record = me.findRecordByValue(value);
+            if(record) {
+                clear = false;
+                var l = record.get('geometry').location;
+                this.latlngValue = {
+                    lat: l.b,
+                    lng: l.d
+                };
+                this.fireEvent('located',this);
+            }
+        }
+        if(clear) {
+            this.latlngValue = null;
+        }
+    },
+
     setLatLngValue: function(latlngValue) {
         var me = this;
         this.latlngValue = latlngValue;
         this.setRawValue(latlngValue);
-        App.getGeocoder().geocode({'latLng': latlngValue}, function(results, status) {
+
+        var callback = function(results, status) {
             if (status == google.maps.GeocoderStatus.OK && results.length) {
                 me.store.loadData(results);
 
 
                 me.setRawValue(
                     address_extract(results[0].address_components,'route') + ' ' +
-                    address_extract(results[0].address_components,'street_number')
+                        address_extract(results[0].address_components,'street_number')
                 );
                 me.value = results[0][me.valueField];
+            } else if (status ==  google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+                setTimeout(function(){
+                    App.getGeocoder().geocode({'latLng': latlngValue}, callback);
+                },100);
             }
-        });
+        };
+
+        App.getGeocoder().geocode({'latLng': latlngValue}, callback);
     }
 });

@@ -124,6 +124,7 @@ Ext.define('App',{
                 name: 'departure',
                 allowBlank: false,
                 emptyText: 'Departure ...',
+                width: 255,
                 listeners: {
                     scope: me,
                     located: function(cb) {
@@ -135,13 +136,32 @@ Ext.define('App',{
                 xtype:'button',
                 iconCls: 'fa fa-exchange',
                 cls: 'x-btn-default-toolbar-small',
-                rowspan: 2
+                rowspan: 2,
+                scope: this,
+                handler: function() {
+                    var fieldA = this.form.getForm().findField('departure');
+                    var fieldB = this.form.getForm().findField('destination');
+
+                    var aval = fieldA.latlngValue;
+                    var bval = fieldB.latlngValue;
+                    fieldA.setValue(null);
+                    fieldB.setValue(null);
+
+                    if(bval) {
+                        this.select('departure',bval,true);
+                    }
+
+                    if(aval) {
+                        this.select('destination',aval,true);
+                    }
+                }
             },{
                 xtype: 'addressfield',
                 fieldLabel: 'B',
                 cls: 'pointb',
                 name: 'destination',
                 allowBlank: false,
+                width: 255,
                 emptyText: 'Destination ...',
                 listeners: {
                     scope: me,
@@ -375,7 +395,8 @@ Ext.define('App',{
                 optimize: 'QUICK',
                 maxWalkDistance: this.mode == 'WALK' ? 100000 : 5000,
                 date: Ext.Date.format(departureTime,'Y-m-d'),
-                walkSpeed: '1.341'
+                walkSpeed: '1.341',
+                locale: 'en_US.UTF-8'
             },
 
             success: function (result, request) {
