@@ -200,14 +200,41 @@ Ext.define('App',{
                     value: now
                 }]
             },{
-                xtype: 'button',
-                id: 'searchbtn',
-                cls: 'btn btn-primary',
-                margin: '10px 0 0 0',
-                style: 'float: right',
-                text: 'Get trip plan',
-                handler: this.search,
-                scope: this
+                xtype: 'container',
+                layout: 'column',
+                colspan: 2,
+                items: [{
+                    xtype: 'button',
+                    //margin: '10px 0 0 0',
+                    iconCls: 'img-icon-gplay',
+                    scale: 'large',
+                    cls: 'btn-gmarket',
+                    //style: 'float: right',
+                    scope: this,
+                    tooltip: 'Application in the Google Play Market '
+                },{
+                    xtype: 'button',
+                    margin: '10px 0 0 20px',
+                    scale: 'large',
+                    iconCls: 'fa fa-envelope-o',
+                    cls: 'btn-mail',
+                    textAlign: 'left',
+                    scope: this,
+                    text: 'Mail',
+                    tooltip: 'Send a mail',
+                    handler: function() {
+                        window.location.href = "mailto:floriparide@gmail.com";
+                    }
+                },{
+                    xtype: 'button',
+                    id: 'searchbtn',
+                    cls: 'btn btn-primary',
+                    margin: '10px 30px 0 0',
+                    style: 'float: right',
+                    text: 'Get trip plan',
+                    handler: this.search,
+                    scope: this
+                }]
             }]
         });
 
