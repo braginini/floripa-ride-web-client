@@ -412,7 +412,7 @@ Ext.define('App',{
                 time: Ext.Date.format(departureTime,'h:iA'),
                 mode: this.mode == 'BUS' ? 'TRANSIT,WALK' : this.mode,
                 optimize: 'QUICK',
-                maxWalkDistance: this.mode == 'WALK' ? 100000 : 5000,
+                maxWalkDistance: this.mode == 'WALK' ? 100000 : 700,
                 date: Ext.Date.format(departureTime,'Y-m-d'),
                 walkSpeed: '1.341',
                 locale: 'en_US.UTF-8'
