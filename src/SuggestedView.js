@@ -32,8 +32,11 @@ Ext.define('Ride.SuggestedView' , {
     overItemCls: 'x-item-over',
     itemSelector: 'div.route-wrap',
     emptyText: 'No routes find',
+    transferText: 'transfer',
+    transfersText: 'transfers',
 
     initComponent: function() {
+        var me = this;
         this.store = new Ext.data.JsonStore({
             model: 'Suggestion'
         });
@@ -68,7 +71,7 @@ Ext.define('Ride.SuggestedView' , {
             },
             formatTransfers: function(transfers) {
                 if(App.mode=='BUS' && transfers) {
-                    transfers =  transfers > 1 ? transfers + 'transfers' : '1 transfer';
+                    transfers =  transfers > 1 ? transfers + ' ' + me.transfersText : '1 '+me.transferText;
                     return '('+transfers+')';
                 }
                 return '';
@@ -86,12 +89,5 @@ Ext.define('Ride.SuggestedView' , {
             }
         });
         this.callParent();
-    },
-    listeners: {
-        selectionchange2: function(dv, nodes ){
-            var l = nodes.length,
-                s = l !== 1 ? 's' : '';
-            this.up('panel').setTitle('Simple DataView (' + l + ' item' + s + ' selected)');
-        }
     }
 });

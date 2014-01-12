@@ -2,9 +2,15 @@ Ext.define('App',{
     singleton: true,
     mode: 'BUS',
 
+    departureText: 'Departure...',
+    destinationText: 'Destination ...',
+    sendMailText: 'Send a mail',
+    googleMarketText: 'Application in the Google Play',
+    tripPlanText: 'Get trip plan',
+
     constructor: function() {
+        this.setupLanguage();
         Ext.onReady(this.init,this);
-         //this.init();
     },
 
     init: function() {
@@ -135,7 +141,7 @@ Ext.define('App',{
                 cls: 'pointa',
                 name: 'departure',
                 allowBlank: false,
-                emptyText: 'Departure ...',
+                emptyText: me.departureText,
                 width: 255,
                 listeners: {
                     scope: me,
@@ -174,7 +180,7 @@ Ext.define('App',{
                 name: 'destination',
                 allowBlank: false,
                 width: 255,
-                emptyText: 'Destination ...',
+                emptyText: me.destinationText,
                 listeners: {
                     scope: me,
                     located: function(cb) {
@@ -200,41 +206,14 @@ Ext.define('App',{
                     value: now
                 }]
             },{
-                xtype: 'container',
-                layout: 'column',
-                colspan: 2,
-                items: [{
-                    xtype: 'button',
-                    //margin: '10px 0 0 0',
-                    iconCls: 'img-icon-gplay',
-                    scale: 'large',
-                    cls: 'btn-gmarket',
-                    //style: 'float: right',
-                    scope: this,
-                    tooltip: 'Application in the Google Play Market '
-                },{
-                    xtype: 'button',
-                    margin: '10px 0 0 20px',
-                    scale: 'large',
-                    iconCls: 'fa fa-envelope-o',
-                    cls: 'btn-mail',
-                    textAlign: 'left',
-                    scope: this,
-                    text: 'Mail',
-                    tooltip: 'Send a mail',
-                    handler: function() {
-                        window.location.href = "mailto:floriparide@gmail.com";
-                    }
-                },{
-                    xtype: 'button',
-                    id: 'searchbtn',
-                    cls: 'btn btn-primary',
-                    margin: '10px 30px 0 0',
-                    style: 'float: right',
-                    text: 'Get trip plan',
-                    handler: this.search,
-                    scope: this
-                }]
+                xtype: 'button',
+                id: 'searchbtn',
+                cls: 'btn btn-primary',
+                margin: '10px 0 0 0',
+                style: 'float: right',
+                text: me.tripPlanText,
+                handler: this.search,
+                scope: this
             }]
         });
 
@@ -358,9 +337,73 @@ Ext.define('App',{
             }
         });
 
+        this.mainTbar = Ext.create('Ext.toolbar.Toolbar', {
+            region: 'north',
+            cls: 'main-toolbar',
+            defaults: {
+                scale: 'large'
+            },
+            items: [
+                // begin using the right-justified button container
+                '->',
+                {
+                    xtype: 'button',
+                    //margin: '10px 0 0 0',
+                    iconCls: 'img-icon-gplay',
+                    //scale: 'large',
+                    //cls: 'btn-gmarket',
+                    //style: 'float: right',
+                    scope: this,
+                    tooltip: me.googleMarketText
+                },{
+                    xtype: 'button',
+                    //margin: '10px 0 0 20px',
+                    //scale: 'large',
+                    iconCls: 'fa fa-envelope-o',
+                    cls: 'btn-mail',
+                    textAlign: 'left',
+                    scope: this,
+                    tooltip: me.sendMailText,
+                    handler: function() {
+                        window.location.href = "mailto:floriparide@gmail.com";
+                    }
+                },
+                '|',
+                {
+                    iconCls:'lang-brazil',
+                    toggleGroup: 'lang',
+                    handler: function() {
+                        window.location.search = Ext.urlEncode({"lang":"br"});
+                    }
+                },
+                {
+                    iconCls:'lang-es',
+                    toggleGroup: 'lang',
+                    handler: function() {
+                        window.location.search = Ext.urlEncode({"lang":"es"});
+                    }
+                },
+                {
+                    iconCls:'lang-uk',
+                    toggleGroup: 'lang',
+                    handler: function() {
+                        window.location.search = Ext.urlEncode({"lang":"en"});
+                    }
+                },
+                {
+                    iconCls:'lang-ru',
+                    toggleGroup: 'lang',
+                    handler: function() {
+                        window.location.search = Ext.urlEncode({"lang":"ru"});
+                    }
+                }
+
+            ]
+        });
+
         this.viewport = Ext.create('Ext.Viewport',{
             layout: 'border',
-            items: [this.sidePanel,this.map]
+            items: [this.mainTbar,this.sidePanel,this.map]
         });
         this.initApp();
     },
@@ -368,6 +411,20 @@ Ext.define('App',{
     initApp: function() {
         Ext.fly('loading-mask').remove();
         Ext.fly('loading').remove();
+    },
+
+    setupLanguage: function(lang) {
+        if(!lang) {
+            var params = Ext.urlDecode(window.location.search.substring(1));
+            if (params.lang) {
+                lang = params.lang;
+            } else {
+                lang = window.navigator.userLanguage || window.navigator.language;
+                lang = lang.split('-')[0];
+            }
+        }
+
+        Ext.Loader.injectScriptElement('assets/extjs/locale/ext-lang-'+lang+'.js',Ext.emptyFn,Ext.emptyFn,this);
     },
 
     select: function(direction,latlng,set_value) {

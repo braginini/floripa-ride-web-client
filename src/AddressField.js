@@ -91,10 +91,13 @@ Ext.define('Ride.AddressField',{
     },
 
     setValue: function(value) {
-        this.callParent(this,value);
+        this.callParent([value]);
         var clear = true;
         if(value) {
-            var record = me.findRecordByValue(value);
+            if(Ext.isArray(value)) {
+                value = value[0].data[this.valueField];
+            }
+            var record = this.findRecordByValue(value);
             if(record) {
                 clear = false;
                 var l = record.get('geometry').location;

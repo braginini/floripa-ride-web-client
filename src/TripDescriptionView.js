@@ -51,7 +51,25 @@ Ext.define('Ride.TripDescriptionView' , {
     cls: 'tripdescrview',
     overItemCls: 'x-item-over',
     itemSelector: 'tbody.trippoint',
-    //emptyText: 'No routes find',
+
+    walkText: 'Walk',
+    walkToText: 'Walk to',
+    busStText: 'Bus.st',
+    aboutText: 'About',
+    busTowardsText: 'Bus towards',
+    onText: 'on',
+    turnLeftText: 'Turn left',
+    turnRightText: 'Turn right',
+    slightLeftText: 'Slight left',
+    slightRightText: 'Slight right',
+    sharpLeftText: 'Sharp left',
+    sharpRightText: 'Sharp right',
+    continueWalkText: 'Continue walk',
+    continueDriveText: 'Continue drive',
+    circularMotionText: 'Circular motion',
+    exitOnText: 'exit on',
+    driveText: 'Drive',
+
     autoScroll: true,
 
     initComponent: function() {
@@ -87,14 +105,14 @@ Ext.define('Ride.TripDescriptionView' , {
                     '<tr>',
                         '<tpl if="mode == \'WALK\'">',
                             '<td colspan="2">',
-                                '<div class="legroute">{[xindex-1]}. <i class="icon-walk"></i> Walk to <tpl if="xindex < xcount-1">Bus.st </tpl>{to.name}</div>',
-                                '<div class="legduration">About {duration} ({distance:this.formatDistance})</div>',
+                                '<div class="legroute">{[xindex-1]}. <i class="icon-walk"></i> '+me.walkToText+' <tpl if="xindex < xcount-1">'+me.busStText+' </tpl>{to.name}</div>',
+                                '<div class="legduration">'+me.aboutText+' {duration} ({distance:this.formatDistance})</div>',
                             '</td>',
                         '</tpl>',
                         '<tpl if="mode == \'BUS\'">',
                             '<td colspan="2">',
                                 '<div class="legname">{[xindex-1]}. {from.name}</div>',
-                                '<div class="legroute"><span class="agency_{agencyId}"><i class="icon-bus"></i> {route}</span> Bus towards {to.name}</div>',
+                                '<div class="legroute"><span class="agency_{agencyId}"><i class="icon-bus"></i> {route}</span> '+me.busTowardsText+' {to.name}</div>',
                                 '<div class="legduration">{startTime:date("g:i a")} - {endTime:date("g:i a")} ({duration}, {distance:this.formatDistance})</div>',
                             '</td>',
                         '</tpl>',
@@ -152,81 +170,82 @@ Ext.define('Ride.TripDescriptionView' , {
                 },
                 formatWalkDirection: function(r,index) {
                     if(index == 1) {
-                        return 'Walk <b>' + r.absoluteDirection + '</b> on <b>' + r.streetName+'</b>';
+                        return me.walkText+' <b>' + r.absoluteDirection + '</b> '+ me.onText +' <b>' + r.streetName+'</b>';
                     }
 
                     var str = '';
                     var addStreet = true;
                     switch (r.relativeDirection) {
                         case 'LEFT':
-                            str = 'Turn left ';
+                            str = me.turnLeftText;
                             break;
                         case 'RIGHT':
-                            str = 'Turn right ';
+                            str = me.turnRightText;
                             break;
                         case 'SLIGHTLY_LEFT':
-                            str = 'Slight left ';
+                            str = me.slightLeftText;
                             break;
                         case 'SLIGHTLY_RIGHT':
-                            str = 'Slight right ';
+                            str = me.slightRightText;
                             break;
                         case 'HARD_LEFT':
-                            str = 'Sharp left ';
+                            str = me.sharpLeftText;
                             break;
                         case 'HARD_RIGHT':
-                            str = 'Sharp right ';
+                            str = me.sharpRightText;
                             break;
                         case 'CONTINUE':
-                            str = 'Continue walk ';
+                            str = me.continueWalkText;
                             break;
                         case 'CIRCLE_CLOCKWISE':
                             addStreet = false;
-                            str = 'Circular motion '+ r.exit+' exit on <b>'+ r.absoluteDirection+'</b>';
+                            str = me.circularMotionText + ' ' + r.exit+' '+me.exitOnText+' <b>'+ r.absoluteDirection+'</b>';
                             break;
                     }
+                    str += ' ';
 
                     if(addStreet) {
-                        str += ' on <b>'+ r.streetName+'</b>';
+                        str += ' '+me.onText+' <b>'+ r.streetName+'</b>';
                     }
                     return str;
                 },
                 formatCarDirection: function(r,index) {
                     if(index == 1) {
-                        return 'Drive <b>' + r.absoluteDirection + '</b> on <b>' + r.streetName+'</b>';
+                        return me.driveText + ' <b>' + r.absoluteDirection + '</b> '+me.onText+' <b>' + r.streetName+'</b>';
                     }
 
                     var str = '';
                     var addStreet = true;
                     switch (r.relativeDirection) {
                         case 'LEFT':
-                            str = 'Turn left ';
+                            str = me.turnLeftText;
                             break;
                         case 'RIGHT':
-                            str = 'Turn right ';
+                            str = me.turnRightText;
                             break;
                         case 'SLIGHTLY_LEFT':
-                            str = 'Slight left ';
+                            str = me.slightLeftText;
                             break;
                         case 'SLIGHTLY_RIGHT':
-                            str = 'Slight right ';
+                            str = me.slightRightText;
                             break;
                         case 'HARD_LEFT':
-                            str = 'Sharp left ';
+                            str = me.sharpLeftText;
                             break;
                         case 'HARD_RIGHT':
-                            str = 'Sharp right ';
+                            str = me.sharpRightText;
                             break;
                         case 'CONTINUE':
-                            str = 'Continue drive ';
+                            str = me.continueDriveText;
                             break;
                         case 'CIRCLE_CLOCKWISE':
                             addStreet = false;
-                            str = 'Circular motion '+ r.exit+' exit on <b>'+ r.absoluteDirection+'</b>';
+                            str = me.circularMotionText + ' ' + r.exit+' '+me.exitOnText+' <b>'+ r.absoluteDirection+'</b>';
                             break;
                     }
 
                     if(addStreet) {
-                        str += ' on <b>'+ r.streetName+'</b>';
+                        str += ' ' + me.onText + '  <b>'+ r.streetName+'</b>';
                     }
                     return str;
                 },

@@ -70,9 +70,23 @@
 }
 
 .img-icon-gplay{
-    background-image: url(../images/google_play_64.png);
-    width: 64px;
-    height: 64px;
+    background-image: url(../images/google-play.png);
+}
+
+.lang-ru {
+    background-image: url(../images/rus.png);
+}
+
+.lang-brazil {
+    background-image: url(../images/brazil.png);
+}
+
+.lang-es {
+    background-image: url(../images/es.png);
+}
+
+.lang-uk {
+    background-image: url(../images/uk.png);
 }
 
 a:hover,a:focus {
@@ -354,11 +368,20 @@ a:focus, .btn:focus, div {
     height: 48px;
 }
 
-.btn-mail {
+.main-toolbar .x-btn {
     background: none;
     border: none;
-    color: #428BCA;
-    font-size: 24px;
+}
+
+.main-toolbar .x-btn-default-toolbar-large-pressed {
+    background-color: #E1E1E1;
+    background-image: -moz-linear-gradient(center top , #E1E1E1, #D5D5D5 50%, #E1E1E1 51%, #E4E4E4);
+}
+
+.btn-mail {
+    /*color: #428BCA;*/
+    color: #808080;
+    font-size: 32px;
 }
 
 .btn-mail .x-btn-inner {

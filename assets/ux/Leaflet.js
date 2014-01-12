@@ -19,6 +19,9 @@ Ext.define('Ext.ux.LeafletMap', {
     xtype: 'leafletmap',
 //    requires: ['Ext.util.Geolocation'],
 
+    departureText: 'Departure poin',
+    destinationText: 'Destination poin',
+    contextmenuWidth: 140,
     config: {
         /**
          * @event maprender
@@ -196,14 +199,14 @@ Ext.define('Ext.ux.LeafletMap', {
         } else {
             var map = L.map(this.getId(),Ext.apply(this.mapOptions,{
                 contextmenu: true,
-                contextmenuWidth: 140,
+                contextmenuWidth: me.contextmenuWidth,
                 contextmenuItems: [{
-                    text: 'Departure poin',
+                    text: me.departureText,
                     callback: function(opts) {
                         me.fireEvent('selectdeparture',opts.latlng);
                     }
                 }, {
-                    text: 'Destination point',
+                    text: me.destinationText,
                     callback: function(opts) {
                         me.fireEvent('selectdestination',opts.latlng);
                     }
