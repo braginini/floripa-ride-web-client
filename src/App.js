@@ -372,29 +372,46 @@ Ext.define('App',{
                 {
                     iconCls:'lang-brazil',
                     toggleGroup: 'lang',
-                    handler: function() {
-                        window.location.search = Ext.urlEncode({"lang":"br"});
-                    }
-                },
-                {
-                    iconCls:'lang-es',
-                    toggleGroup: 'lang',
-                    handler: function() {
-                        window.location.search = Ext.urlEncode({"lang":"es"});
-                    }
-                },
-                {
-                    iconCls:'lang-uk',
-                    toggleGroup: 'lang',
-                    handler: function() {
-                        window.location.search = Ext.urlEncode({"lang":"en"});
-                    }
-                },
-                {
-                    iconCls:'lang-ru',
-                    toggleGroup: 'lang',
-                    handler: function() {
-                        window.location.search = Ext.urlEncode({"lang":"ru"});
+                    menu: {
+                        xtype: 'menu',
+                        defaults : {
+
+                        },
+                        items: [{
+                            iconCls:'lang-brazil',
+                            toggleGroup: 'lang',
+                            icon: 'images/brazil.png',
+                            text: 'Brazil',
+                            handler: function() {
+                                window.location.search = Ext.urlEncode({"lang":"br"});
+                            }
+                        },{
+                            iconCls:'lang-es',
+                            toggleGroup: 'lang',
+                            icon: 'images/es.png',
+                            text: 'Spain',
+                            handler: function() {
+                                window.location.search = Ext.urlEncode({"lang":"es"});
+                            }
+                        },
+                        {
+                            iconCls:'lang-uk',
+                            toggleGroup: 'lang',
+                            icon: 'images/uk.png',
+                            text: 'English',
+                            handler: function() {
+                                window.location.search = Ext.urlEncode({"lang":"en"});
+                            }
+                        },
+                        {
+                            iconCls:'lang-ru',
+                            toggleGroup: 'lang',
+                            icon: 'images/rus.png',
+                            text: 'Russian',
+                            handler: function() {
+                                window.location.search = Ext.urlEncode({"lang":"ru"});
+                            }
+                        }]
                     }
                 }
 
