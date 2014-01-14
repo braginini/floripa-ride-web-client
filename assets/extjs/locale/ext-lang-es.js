@@ -317,3 +317,49 @@ Ext.define("Ext.locale.es.Component", {
     override: "Ext.Component"
 });
 
+// ************************* App localization ********************** //
+
+Ext.define("Ride.locale.ru.App", {
+    override: "App",
+    departureText: 'Desde...',
+    destinationText: 'Hasta...',
+    sendMailText: 'Enviar e-mail',
+    googleMarketText: 'Link to la aplicación en Google Play',
+    tripPlanText: 'Buscar recorrido',
+    routesText: 'Indicaciones'
+});
+
+Ext.define("Ext.locale.ru.ux.LeafletMap", {
+    override: "Ext.ux.LeafletMap",
+    departureText: 'Desde aquí',
+    destinationText: 'Hasta aquí',
+    contextmenuWidth: 100
+});
+
+Ext.define("Ride.locale.ru.SuggestedView", {
+    override: "Ride.SuggestedView",
+    emptyText: 'Itinerarios encontrados',
+    transferText: 'traspaso',
+    transfersText: 'traspasos'
+});
+
+Ext.define("Ride.locale.ru.TripDescriptionView", {
+    override: "Ride.TripDescriptionView",
+    walkText: 'Cambinar',
+    walkToText: 'Cambinar desde',
+    busStText: 'Parada de autobús',
+    aboutText: 'Sobre',
+    busTowardsText: 'Tomar bojar en',
+    onText: 'el',
+    turnLeftText: 'Doblar a la izquierda',
+    turnRightText: 'Doblar a la derecha',
+    slightLeftText: 'Lixeiramente a la izquierda',
+    slightRightText: 'Lixeiramente a la derecha',
+    sharpLeftText: 'Gira a la izquierda',
+    sharpRightText: 'Gira a la derecha',
+    continueWalkText: 'Continúar a pie',
+    continueDriveText: 'Continúar en coche',
+    circularMotionText: 'Movimiento circular',
+    exitOnText: 'salida',
+    driveText: 'Conduce'
+});
