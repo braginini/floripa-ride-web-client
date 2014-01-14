@@ -352,7 +352,10 @@ Ext.define('App',{
                     xtype: 'button',
                     iconCls: 'img-icon-gplay',
                     scope: this,
-                    tooltip: me.googleMarketText
+                    tooltip: me.googleMarketText,
+                    handler: function() {
+                        window.open('https://play.google.com/store/apps/details?id=com.floriparide.android');
+                    }
                 },{
                     xtype: 'button',
                     iconCls: 'fa fa-envelope-o',
