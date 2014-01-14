@@ -7,6 +7,7 @@ Ext.define('App',{
     sendMailText: 'Send a mail',
     googleMarketText: 'Application in the Google Play',
     tripPlanText: 'Get trip plan',
+    routesText: 'Routes',
 
     constructor: function() {
         this.setupLanguage();
@@ -295,6 +296,7 @@ Ext.define('App',{
             align: 'stretch',
             region: 'west',
             collapsible: true,
+            title: me.routesText,
             width: 300,
             items: [{
                 xtype: 'container',
@@ -348,17 +350,11 @@ Ext.define('App',{
                 '->',
                 {
                     xtype: 'button',
-                    //margin: '10px 0 0 0',
                     iconCls: 'img-icon-gplay',
-                    //scale: 'large',
-                    //cls: 'btn-gmarket',
-                    //style: 'float: right',
                     scope: this,
                     tooltip: me.googleMarketText
                 },{
                     xtype: 'button',
-                    //margin: '10px 0 0 20px',
-                    //scale: 'large',
                     iconCls: 'fa fa-envelope-o',
                     cls: 'btn-mail',
                     textAlign: 'left',
@@ -370,43 +366,37 @@ Ext.define('App',{
                 },
                 '|',
                 {
-                    iconCls:'lang-brazil',
-                    toggleGroup: 'lang',
+                    iconCls:'lang-'+me.lang,
+                    id: 'btn-lang',
                     menu: {
                         xtype: 'menu',
-                        defaults : {
-
-                        },
+                        cls: 'lang-menu',
                         items: [{
-                            iconCls:'lang-brazil',
-                            toggleGroup: 'lang',
-                            icon: 'images/brazil.png',
+                            id: 'lang-brasil',
+                            icon: 'images/brazil16.png',
                             text: 'Brazil',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"br"});
                             }
                         },{
-                            iconCls:'lang-es',
-                            toggleGroup: 'lang',
-                            icon: 'images/es.png',
+                            id: 'lang-es',
+                            icon: 'images/es16.png',
                             text: 'Spain',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"es"});
                             }
                         },
                         {
-                            iconCls:'lang-uk',
-                            toggleGroup: 'lang',
-                            icon: 'images/uk.png',
+                            id:'lang-uk',
+                            icon: 'images/uk16.png',
                             text: 'English',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"en"});
                             }
                         },
                         {
-                            iconCls:'lang-ru',
-                            toggleGroup: 'lang',
-                            icon: 'images/rus.png',
+                            id: 'lang-ru',
+                            icon: 'images/rus16.png',
                             text: 'Russian',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"ru"});
@@ -441,6 +431,7 @@ Ext.define('App',{
             }
         }
 
+        this.lang = lang;
         Ext.Loader.injectScriptElement('assets/extjs/locale/ext-lang-'+lang+'.js',Ext.emptyFn,Ext.emptyFn,this);
     },
 

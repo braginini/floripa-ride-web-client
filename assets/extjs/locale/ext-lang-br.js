@@ -293,7 +293,8 @@ Ext.define("Ride.locale.ru.App", {
     destinationText: 'Aqui...',
     sendMailText: 'Enviar um e-mail',
     googleMarketText: 'Referência ao Anexo na Google Play',
-    tripPlanText: 'Como chegar'
+    tripPlanText: 'Como chegar',
+    routesText: 'Direcções'
 });
 
 Ext.define("Ext.locale.ru.ux.LeafletMap", {
