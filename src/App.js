@@ -377,14 +377,14 @@ Ext.define('App',{
                         items: [{
                             id: 'lang-brasil',
                             icon: 'images/brazil16.png',
-                            text: 'Brazil',
+                            text: 'Português',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"br"});
                             }
                         },{
                             id: 'lang-es',
                             icon: 'images/es16.png',
-                            text: 'Spain',
+                            text: 'Español',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"es"});
                             }
@@ -400,7 +400,7 @@ Ext.define('App',{
                         {
                             id: 'lang-ru',
                             icon: 'images/rus16.png',
-                            text: 'Russian',
+                            text: 'Русский',
                             handler: function() {
                                 window.location.search = Ext.urlEncode({"lang":"ru"});
                             }
