@@ -102,8 +102,8 @@ Ext.define('Ride.AddressField',{
                 clear = false;
                 var l = record.get('geometry').location;
                 this.latlngValue = {
-                    lat: l.b,
-                    lng: l.d
+                    lat: l.lat(),
+                    lng: l.lng()
                 };
                 this.fireEvent('located',this);
             }

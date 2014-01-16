@@ -147,7 +147,7 @@ Ext.define('App',{
                 listeners: {
                     scope: me,
                     located: function(cb) {
-                        this.select('destination',cb.latlngValue);
+                        this.select('departure',cb.latlngValue);
                     }
                 }
             },{
@@ -185,7 +185,7 @@ Ext.define('App',{
                 listeners: {
                     scope: me,
                     located: function(cb) {
-                        this.select('departure',cb.latlngValue);
+                        this.select('destination',cb.latlngValue);
                     }
                 }
             },{
