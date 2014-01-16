@@ -290,6 +290,15 @@ Ext.define('App',{
             }
         });
 
+        this.helpPanel = Ext.create('Ext.container.Container',{
+            html: '<h3 style="margin-left: 20px">Como usar o aplicativo</h3>' +
+                '<ul>' +
+                '<li>Abrir o aplicativo ou website</li>' +
+                '<li>Escolha o ponto de partida e o ponto de chegada no mapa ou digite o endereço na caixa de pesquisa</li>' +
+                '<li>Selecione qual rota e a melhor para você</li>'+
+                '</ul>'
+        });
+
         this.sidePanel = Ext.create('Ext.panel.Panel',{
             id: 'sidebar',
             layout: 'border',
@@ -303,7 +312,7 @@ Ext.define('App',{
                 layout: 'anchor',
                 region: 'north',
                 height: 300,
-                items: [this.form,this.suggView]
+                items: [this.form,this.helpPanel,this.suggView]
             },{
                 xtype: 'container',
                 layout: 'fit',
@@ -485,6 +494,8 @@ Ext.define('App',{
         if(!fieldA.latlngValue || !fieldB.latlngValue) {
             return;
         }
+
+        this.helpPanel.hide();
 
         var pointA = fieldA.latlngValue.lat + ',' + fieldA.latlngValue.lng;
         var pointB = fieldB.latlngValue.lat + ',' + fieldB.latlngValue.lng;
