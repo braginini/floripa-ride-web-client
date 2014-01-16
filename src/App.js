@@ -358,6 +358,13 @@ Ext.define('App',{
                     }
                 },{
                     xtype: 'button',
+                    iconCls: 'fa fa-facebook',
+                    scope: this,
+                    handler: function() {
+                        window.open('https://www.facebook.com/floriparide');
+                    }
+                },{
+                    xtype: 'button',
                     iconCls: 'fa fa-envelope-o',
                     cls: 'btn-mail',
                     textAlign: 'left',

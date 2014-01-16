@@ -45,7 +45,7 @@ if ( typeof Ride !== 'undefined' && Ride ) {
             document.write('<script src="'+file+'" type="text/javascript"></script>');
         }
     } else {
-        var version = "0.1.14";
+        var version = "0.1.15";
         document.write('<script src="build/build'+version+'.min.js" type="text/javascript"></script>');
     }
 }
