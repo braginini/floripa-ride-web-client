@@ -452,7 +452,8 @@ Ext.define('App',{
         }
 
         this.lang = lang;
-        Ext.Loader.injectScriptElement('assets/extjs/locale/ext-lang-'+lang+'.js',Ext.emptyFn,Ext.emptyFn,this);
+        //Ext.Loader.injectScriptElement('assets/extjs/locale/ext-lang-'+lang+'.js',Ext.emptyFn,Ext.emptyFn,this);
+        document.write('<script src="assets/extjs/locale/ext-lang-'+lang+'.js" type="text/javascript"></script>');
     },
 
     select: function(direction,latlng,set_value) {
