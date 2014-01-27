@@ -362,6 +362,7 @@ Ext.define('App',{
                     iconCls: 'img-icon-gplay',
                     scope: this,
                     tooltip: me.googleMarketText,
+                    text: 'Google play',
                     handler: function() {
                         window.open('https://play.google.com/store/apps/details?id=com.floriparide.android');
                     }
@@ -502,6 +503,9 @@ Ext.define('App',{
 
         var time = Ext.getCmp('departtime').getValue();
         var now = Ext.getCmp('departdate').getValue();
+        if(Ext.isString(now)) {
+            now = new Date();
+        }
         now.setHours(time.getHours(),time.getMinutes());
 
         var searchBtn = Ext.getCmp('searchbtn');

@@ -12,10 +12,10 @@ function getIncludeFiles() {
             'assets/leaflet-ux/leaflet.restoreview.js',
             'assets/leaflet-ux/awesomemarkers/leaflet.awesome-markers.js',
 
-            'src/App.js',
             'src/AddressField.js',
             'src/SuggestedView.js',
-            'src/TripDescriptionView.js'
+            'src/TripDescriptionView.js',
+            'src/App.js'
         ],
         css: [
             'assets/extjs/resources/css/ext-all-neptune.css',
