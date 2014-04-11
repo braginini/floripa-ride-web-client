@@ -11,11 +11,35 @@ Ext.define('App',{
 
     constructor: function() {
         this.setupLanguage();
+        this.syncRouteTask =  new Ext.util.DelayedTask(this.syncRoute, this);
         Ext.onReady(this.init,this);
     },
 
     init: function() {
         Ext.tip.QuickTipManager.init();
+
+        Ext.History.html5Mode = false;
+        Ext.History.hashPrefix = '!';
+
+        Ext.Router.route('/it', function(params) {
+            var from, to, when;
+
+            if (params['when']) {
+                when = Ext.Date.parse(params['when'], 'Y-m-d@H:i');
+                Ext.getCmp('departtime').setValue(when);
+                Ext.getCmp('departdate').setValue(when);
+            }
+
+            if (params['from']) {
+                from = L.latLng(params['from'].split(','));
+                this.select('departure', from, true);
+            }
+
+            if (params['to']) {
+                to = L.latLng(params['to'].split(','));
+                this.select('destination', to, true);
+            }
+        }, this);
 
         this.markerIconA = L.icon({
             iconUrl: 'images/marker_greenA.png',
@@ -438,6 +462,7 @@ Ext.define('App',{
     initApp: function() {
         Ext.fly('loading-mask').remove();
         Ext.fly('loading').remove();
+        Ext.Router.init();
     },
 
     setupLanguage: function(lang) {
@@ -471,7 +496,42 @@ Ext.define('App',{
             var field = me.form.getForm().findField(direction);
             field.setLatLngValue(latlng);
         }
+        this.syncRouteTask.delay(500);
         this.search();
+    },
+
+    syncRoute: function() {
+        var cur, path, params = [];
+        var fieldA = this.form.getForm().findField('departure');
+        var fieldB = this.form.getForm().findField('destination');
+
+        var time = Ext.getCmp('departtime').getValue();
+        var now = Ext.getCmp('departdate').getValue();
+        if(Ext.isString(now)) {
+            now = new Date();
+        }
+        now.setHours(time.getHours(),time.getMinutes());
+
+        if (fieldA.latlngValue) {
+            params.push('from=' + fieldA.latlngValue.lat + ',' + fieldA.latlngValue.lng);
+        }
+
+        if (fieldB.latlngValue) {
+            params.push('to=' + fieldB.latlngValue.lat + ',' + fieldB.latlngValue.lng);
+        }
+
+        if (!params.length) {
+            return;
+        }
+
+        params.push('when=' + Ext.Date.format(now, 'Y-m-d@H:i'));
+
+        cur = Ext.History.getToken();
+        path = '/it?' + params.join('&');
+
+        if (cur != path) {
+            Ext.Router.redirect(path);
+        }
     },
 
     geocode: function(latlng,callback,scope) {

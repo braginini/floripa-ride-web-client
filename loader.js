@@ -11,6 +11,9 @@ function getIncludeFiles() {
             'assets/leaflet-ux/locatecontrol/L.Control.Locate.js',
             'assets/leaflet-ux/leaflet.restoreview.js',
             'assets/leaflet-ux/awesomemarkers/leaflet.awesome-markers.js',
+            'assets/ux/history.js',
+            'assets/ux/routable.js',
+            'assets/ux/router.js',
 
             'src/AddressField.js',
             'src/SuggestedView.js',
