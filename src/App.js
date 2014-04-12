@@ -36,6 +36,15 @@ Ext.define('App',{
                 Ext.getCmp('departdate').setValue(when);
             }
 
+            if (params['mode']) {
+                var mode = params['mode'];
+                var btn = this.form.down('button[iconCls=icon-' + mode.toLowerCase() + ']');
+                if (btn) {
+                    this.mode = mode;
+                    btn.toggle(true);
+                }
+            }
+
             if (params['from']) {
                 from = L.latLng(params['from'].split(','));
                 this.select('departure', from, true);
@@ -91,6 +100,7 @@ Ext.define('App',{
                 btn.toggle();
             }
 
+            me.syncRoute();
             return pressed;
         };
 
@@ -558,6 +568,7 @@ Ext.define('App',{
         }
 
         params.push('when=' + Ext.Date.format(now, 'Y-m-d@H:i'));
+        params.push('mode=' + this.mode);
 
         cur = Ext.History.getToken();
         path = '/it?' + params.join('&');
