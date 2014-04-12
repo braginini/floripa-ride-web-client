@@ -326,7 +326,9 @@ Ext.define("Ride.locale.ru.App", {
     sendMailText: 'Enviar e-mail',
     googleMarketText: 'Link to la aplicación en Google Play',
     tripPlanText: 'Buscar recorrido',
-    routesText: 'Indicaciones'
+    routesText: 'Indicaciones',
+    shortUrlText: 'Url curto',
+    getShortUrlText: 'Recibir url curto'
 });
 
 Ext.define("Ext.locale.ru.ux.LeafletMap", {

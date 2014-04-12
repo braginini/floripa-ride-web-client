@@ -42,7 +42,7 @@ Ext.override(Ext.util.History,{
 
     startUp: function() {
         this.callOverridden();
-        if (this.hashPrefix && this.currentToken && this.currentToken.startsWith(this.hashPrefix)) {
+        if (this.hashPrefix && this.currentToken && Ext.String.startsWith(this.currentToken, this.hashPrefix)) {
             this.currentToken = this.currentToken.substring(this.hashPrefix.length);
         }
     },
@@ -52,7 +52,7 @@ Ext.override(Ext.util.History,{
     },
 
     handleStateChange: function(token) {
-        this.currentToken = this.hashPrefix && token.startsWith(this.hashPrefix) ?
+        this.currentToken = this.hashPrefix && Ext.String.startsWith(token,this.hashPrefix) ?
             token.substring(this.hashPrefix.length) : token;
         this.fireEvent('change', token, this.states.get(token));
     },

@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+.x-btn-icon-el.fa {
+    font-size: 16px;
+}
+
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon';
     speak: none;
@@ -382,15 +386,14 @@ a:focus, .btn:focus, div {
     background-image: -moz-linear-gradient(center top , #E1E1E1, #D5D5D5 50%, #E1E1E1 51%, #E4E4E4);
 }
 
-.main-toolbar .x-btn-default-toolbar-large {
-    color: #428BCA;;
+.main-toolbar .x-btn-default-toolbar-large .x-btn-icon-el {
+    color: #428BCA;
     font-size: 32px;
 }
 
 .btn-mail {
     /*color: #428BCA;*/
     color: #808080;
-    font-size: 32px;
 }
 
 .btn-mail .x-btn-inner {

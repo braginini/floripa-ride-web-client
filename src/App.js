@@ -8,6 +8,8 @@ Ext.define('App',{
     googleMarketText: 'Application in the Google Play',
     tripPlanText: 'Get trip plan',
     routesText: 'Routes',
+    shortUrlText: 'Short url',
+    getShortUrlText: 'Get short url',
 
     constructor: function() {
         this.setupLanguage();
@@ -17,6 +19,10 @@ Ext.define('App',{
 
     init: function() {
         Ext.tip.QuickTipManager.init();
+
+        //hack from here: http://stackoverflow.com/questions/15834689/extjs-4-2-tooltips-not-wide-enough-to-see-contents
+        //delete
+        Ext.tip.Tip.prototype.minWidth = 100;
 
         Ext.History.html5Mode = false;
         Ext.History.hashPrefix = '!';
@@ -101,7 +107,7 @@ Ext.define('App',{
                 labelWidth: 20
             },
             items: [{
-                colspan: 2,
+                //colspan: 2,
                 cls: 'btn-group transportes-group',
                 xtype: 'buttongroup',
                 columns: 3,
@@ -160,6 +166,33 @@ Ext.define('App',{
                         }
                     }
                 }]
+            },{
+                xtype: 'button',
+                iconCls: 'fa fa-link',
+                cls: 'x-btn-default-toolbar-small',
+                tooltip: this.getShortUrlText,
+                tdAttrs: {style: "vertical-align: top"},
+                scope: this,
+                handler: function() {
+                    Ext.Ajax.useDefaultXhrHeader = false;
+                    Ext.Ajax.request({
+                        url: 'https://www.googleapis.com/urlshortener/v1/url',
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json; charset=utf-8'},
+                        params: {
+                            key: 'AIzaSyCIKPLopXCxEwwR8BLTm8fDs_ADfHB82A0'
+                        },
+                        jsonData: {
+                            longUrl: window.location.href
+                        },
+                        scope: this,
+                        success: function(response) {
+                            var json = Ext.decode(response.responseText);
+                            Ext.Msg.alert(this.shortUrlText, json.id);
+                        }
+                    });
+                    Ext.Ajax.useDefaultXhrHeader = true;
+                }
             },{
                 xtype: 'addressfield',
                 fieldLabel: 'A',
