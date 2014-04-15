@@ -127,7 +127,8 @@ Ext.define('Ride.AddressField',{
                     address_extract(results[0].address_components,'route') + ' ' +
                         address_extract(results[0].address_components,'street_number')
                 );
-                me.value = results[0][me.valueField];
+                //me.value = results[0][me.valueField];
+                me.setValue(results[0][me.valueField]);
             } else if (status ==  google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
                 setTimeout(function(){
                     App.getGeocoder().geocode({'latLng': latlngValue}, callback);

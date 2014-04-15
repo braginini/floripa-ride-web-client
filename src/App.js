@@ -110,6 +110,7 @@ Ext.define('App',{
                 columns: 2
             },
             height: 200,
+            id: 'params_form',
             defaultType: 'textfield',
             bodyPadding: 10,
             border: false,
@@ -118,6 +119,7 @@ Ext.define('App',{
             },
             items: [{
                 //colspan: 2,
+                id: 'mode',
                 cls: 'btn-group transportes-group',
                 xtype: 'buttongroup',
                 columns: 3,
@@ -178,6 +180,7 @@ Ext.define('App',{
                 }]
             },{
                 xtype: 'button',
+                id: 'shortlink',
                 iconCls: 'fa fa-link',
                 cls: 'x-btn-default-toolbar-small',
                 tooltip: this.getShortUrlText,
@@ -205,6 +208,7 @@ Ext.define('App',{
                 }
             },{
                 xtype: 'addressfield',
+                id: 'fieldA',
                 fieldLabel: 'A',
                 cls: 'pointa',
                 name: 'departure',
@@ -243,6 +247,7 @@ Ext.define('App',{
                 }
             },{
                 xtype: 'addressfield',
+                id: 'fieldB',
                 fieldLabel: 'B',
                 cls: 'pointb',
                 name: 'destination',
@@ -286,6 +291,7 @@ Ext.define('App',{
         });
 
         this.suggView = Ext.create('Ride.SuggestedView',{
+            id: 'suggestion',
             height: 100,
             listeners: {
                 scope: this,
@@ -395,6 +401,7 @@ Ext.define('App',{
         });
 
         this.map = Ext.create('Ext.ux.LeafletMap',{
+            id: 'map',
             region: 'center',
             mapOptions: {
                 initialCenter: [-27.592968,-48.551674],
@@ -450,9 +457,17 @@ Ext.define('App',{
                     handler: function() {
                         window.location.href = "mailto:floriparide@gmail.com";
                     }
-                },
-                '|',
-                {
+                },{
+                    xtype: 'button',
+                    iconCls: 'fa fa-question',
+                    cls: 'btn-help',
+                    //textAlign: 'left',
+                    scope: this,
+                    tooltip: me.sendMailText,
+                    handler: function() {
+                        App.showIntro();
+                    }
+                }, '|', {
                     iconCls:'lang-'+me.lang,
                     id: 'btn-lang',
                     menu: {
@@ -505,6 +520,14 @@ Ext.define('App',{
     initApp: function() {
         Ext.fly('loading-mask').remove();
         Ext.fly('loading').remove();
+
+        if (!Ext.util.Cookies.get('frfv')) {
+            this.showIntro();
+            var expire = new Date();
+            expire.setFullYear(expire.getFullYear() + 10);
+            Ext.util.Cookies.set('frfv', 1, expire);
+        }
+
         Ext.Router.init();
     },
 
@@ -707,6 +730,21 @@ Ext.define('App',{
 
     showTripDescription: function(index) {
         this.tripDescriptionView.loadPlan(this.plan,index,this.mode);
+    },
+
+    showIntro: function() {
+        var fieldA = App.form.getForm().findField('departure');
+        var fieldB = App.form.getForm().findField('destination');
+
+        fieldA.setValue(null);
+        fieldB.setValue(null);
+
+        App.map.clearRoutes();
+        var intro = new Ride.Intro();
+        intro.start();
+        Ext.Router.skipInitToken = true;
+        Ext.Router.init();
+        Ext.Router.redirect('/');
     }
 });
 

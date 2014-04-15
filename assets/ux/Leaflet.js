@@ -247,11 +247,7 @@ Ext.define('Ext.ux.LeafletMap', {
     },
 
     addRoute: function(name,polylines) {
-        if(this.routeLayers[name]) {
-            for(var i=0;i<this.routeLayers[name].length;i++) {
-                this.map.removeLayer(this.routeLayers[name][i]);
-            }
-        }
+        this.clearRoute(name);
 
         if(polylines && polylines.length) {
             this.routeLayers[name] = polylines;
@@ -259,5 +255,19 @@ Ext.define('Ext.ux.LeafletMap', {
                 this.map.addLayer(polylines[i]);
             }
         }
+    },
+
+    clearRoute: function(name) {
+        if(this.routeLayers[name]) {
+            for(var i=0;i<this.routeLayers[name].length;i++) {
+                this.map.removeLayer(this.routeLayers[name][i]);
+            }
+        }
+    },
+
+    clearRoutes: function() {
+        Ext.Object.each(this.routeLayers, function(name) {
+            this.clearRoute(name);
+        }, this);
     }
 });

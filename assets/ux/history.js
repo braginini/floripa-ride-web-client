@@ -54,7 +54,7 @@ Ext.override(Ext.util.History,{
     handleStateChange: function(token) {
         this.currentToken = this.hashPrefix && Ext.String.startsWith(token,this.hashPrefix) ?
             token.substring(this.hashPrefix.length) : token;
-        this.fireEvent('change', token, this.states.get(token));
+        this.fireEvent('change', this.currentToken, this.states.get(token));
     },
 
     getHash: function() {

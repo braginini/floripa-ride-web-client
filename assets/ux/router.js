@@ -1,6 +1,7 @@
 Ext.define('Ext.ux.mvc.Router', {
     singleton: true,
     alternateClassName: 'Ext.Router',
+    skipInitToken: false,
     mixins: {
         observable: 'Ext.util.Observable',
         routable: 'Ext.ux.mvc.Routable'
@@ -29,12 +30,14 @@ Ext.define('Ext.ux.mvc.Router', {
         history.init();
         history.on('change', me.parse, me);
 
-        if (Ext.isReady) {
-            history.fireEvent('change', history.getToken());
-        } else {
-            Ext.onReady(function() {
+        if (!this.skipInitToken) {
+            if (Ext.isReady) {
                 history.fireEvent('change', history.getToken());
-            });
+            } else {
+                Ext.onReady(function() {
+                    history.fireEvent('change', history.getToken());
+                });
+            }
         }
     }
 },

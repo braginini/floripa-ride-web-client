@@ -405,6 +405,18 @@ a:focus, .btn:focus, div {
 .lang-menu .x-menu-item-text {
     color: darkgray;
 }
+
+.introjs-helperNumberLayer {
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    left: -16px;
+    z-index: 9999999;
+}
+
+.introjs-tooltip {
+    max-width: 450px;
+}
 /****************** Bus agency styles *******************/
 .agency_TranSol {
     color: #3399CC;

@@ -14,10 +14,12 @@ function getIncludeFiles() {
             'assets/ux/history.js',
             'assets/ux/routable.js',
             'assets/ux/router.js',
+            'assets/ux/Intro.js',
 
             'src/AddressField.js',
             'src/SuggestedView.js',
             'src/TripDescriptionView.js',
+            'src/Intro.js',
             'src/App.js'
         ],
         css: [
@@ -28,6 +30,7 @@ function getIncludeFiles() {
             'assets/leaflet-ux/locatecontrol/L.Control.Locate.css',
             'assets/leaflet-ux/zoomslider/L.Control.Zoomslider.css',
             'assets/leaflet-ux/awesomemarkers/leaflet.awesome-markers.css',
+            'css/introjs.css',
             'css/font-awesome.css',
             'css/app.css'
         ]
