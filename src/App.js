@@ -403,6 +403,7 @@ Ext.define('App',{
         this.map = Ext.create('Ext.ux.LeafletMap',{
             id: 'map',
             region: 'center',
+            tileLayerUrl: Ride.Config.tileLayerUrl,
             mapOptions: {
                 initialCenter: [-27.592968,-48.551674],
                 minZoom: 11,
