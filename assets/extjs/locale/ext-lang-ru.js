@@ -347,3 +347,11 @@ Ext.define("Ride.locale.ru.TripDescriptionView", {
     exitOnText: 'съезд',
     driveText: 'Двигайтесь'
 });
+
+Ext.define('Ext.locale.ru.ux.Intro', {
+    override: 'Ext.ux.Intro',
+    nextLabel: 'Вперед &rarr;',
+    prevLabel: '&larr; Назад',
+    skipLabel: 'Пропустить',
+    doneLabel: 'Завершить'
+});

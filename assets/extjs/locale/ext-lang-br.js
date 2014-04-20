@@ -287,7 +287,7 @@ Ext.define("Ext.locale.pt_BR.Component", {
 
 // ************************* App localization ********************** //
 
-Ext.define("Ride.locale.ru.App", {
+Ext.define("Ride.locale.pt_BR.App", {
     override: "App",
     departureText: 'Daqui...',
     destinationText: 'Aqui...',
@@ -306,14 +306,14 @@ Ext.define("Ext.locale.ru.ux.LeafletMap", {
     contextmenuWidth: 200
 });
 
-Ext.define("Ride.locale.ru.SuggestedView", {
+Ext.define("Ride.locale.pt_BR.SuggestedView", {
     override: "Ride.SuggestedView",
     emptyText: 'Não temos rotas',
     transferText: 'transfer',
     transfersText: 'transfers'
 });
 
-Ext.define("Ride.locale.ru.TripDescriptionView", {
+Ext.define("Ride.locale.pt_BR.TripDescriptionView", {
     override: "Ride.TripDescriptionView",
     walkText: 'Andar',
     walkToText: 'A pé até',
@@ -332,4 +332,12 @@ Ext.define("Ride.locale.ru.TripDescriptionView", {
     circularMotionText: 'Na rotatória',
     exitOnText: 'pegue a',
     driveText: 'Conduzir'
+});
+
+Ext.define('Ext.locale.pt_Br.ux.Intro', {
+    override: 'Ext.ux.Intro',
+    nextLabel: 'Próximo &rarr;',
+    prevLabel: '&larr; Voltar',
+    skipLabel: 'Ir',
+    doneLabel: 'Concluído'
 });

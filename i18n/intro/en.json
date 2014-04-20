@@ -1,0 +1,61 @@
+[{
+    "intro": [
+        "<h3>Description</h3>",
+        "<p>The first application in Florianopolis which allows you to reach fast any point in the city by bus.",
+        "FloripaRide will be also useful for those who use car or bicycle.</p>",
+        "<p>For instance, you can easily get to each of the 42 beaches from the city center.</p>",
+        "<h5>Main features of the application:</h5>",
+        "<ol>",
+        "<li>Route creation between any city points</li>",
+        "<li>Routes are built according to real bus timetable</li>",
+        "<li>The application shows a detailed information of your trip:</li>",
+        "<ul>",
+        "<li> travel time</li>",
+        "<li> distance to travel</li>",
+        "<li> transfers</li>",
+        "<li> bus numbers</li>",
+        "<li> bus estimated arrival</li>",
+        "<li> bus stops names and many more</li>",
+        "</ul>",
+        "<li>All the information is displayed on the interactive map</li>",
+        "</ol>"
+    ],
+    "width": 450
+},{
+    "element": "mode",
+    "intro": ["Select your preferred way to travel, bus by default."],
+    "width": 250,
+    "position": "right"
+},{
+    "id": "fieldA",
+    "element": "fieldA",
+    "intro": "Enter the address of the place of origin, for example Terminal Rodoviário Rita Maria",
+    "width": 250,
+    "position": "right"
+
+},{
+    "id": "fieldB",
+    "element": "map",
+    "intro": "Select destination by right-clicking on the map",
+    "width": 250,
+    "position": "left"
+
+},{
+    "id": "suggestion",
+    "element": "sidebar",
+    "intro": "Select the most suitable route.",
+    "width": 250,
+    "position": "right"
+
+},{
+    "id": "shortlink",
+    "element": "shortlink",
+    "intro": [
+        "<h5>Enjoy!</h5>",
+        "<p>Now you can share a link to the route with your friends. ",
+        "Just press the button and copy the address.</p>"
+    ],
+    "width": 250,
+    "position": "right"
+
+}]

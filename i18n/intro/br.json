@@ -1,0 +1,61 @@
+[{
+    "intro": [
+        "<h3>Descrição</h3>",
+        "<p>A primeira aplicativo de Florianópolis, que lhe permite chegar rapidamente qualquer ponto da cidade de ônibus.",
+        " FloripaRide será também útil para aqueles que usam carro ou bicicleta.</p>",
+        "<p>Por exemplo, você pode facilmente chegar a cada uma das 42 praias a partir do centro da cidade.</p>",
+        "<h5>Principais características do aplicativo:</h5>",
+        "<ol>",
+        "<li>Criação da rota entre quaisquer pontos da cidade</li>",
+        "<li>Rotas são construídas de acordo com um calendário real de ônibus</li>",
+        "<li>A aplicação mostra informações detalhadas de sua viagem:</li>",
+        "<ul>",
+        "<li> Tempo de viagem</li>",
+        "<li> Distância a percorrer</li>",
+        "<li> Transferências</li>",
+        "<li> Números de ônibus</li>",
+        "<li> Tempo de chegada prevista</li>",
+        "<li> Tempo de chegada prevista</li>",
+        "</ul>",
+        "<li>Nomes de pontos de ônibus e muitos mais</li>",
+        "</ol>"
+    ],
+    "width": 450
+},{
+    "element": "mode",
+    "intro": ["Seleccione a sua forma preferida de viajar, o ônibus padrão."],
+    "width": 250,
+    "position": "right"
+},{
+    "id": "fieldA",
+    "element": "fieldA",
+    "intro": "Enter o endereço do local de origem, por exemplo Terminal Rodoviário Rita Maria",
+    "width": 250,
+    "position": "right"
+
+},{
+    "id": "fieldB",
+    "element": "map",
+    "intro": "Escolha o destino clicando com o botão direito sobre o mapa",
+    "width": 250,
+    "position": "left"
+
+},{
+    "id": "suggestion",
+    "element": "sidebar",
+    "intro": "Escolha o caminho mais apropriado.",
+    "width": 250,
+    "position": "right"
+
+},{
+    "id": "shortlink",
+    "element": "shortlink",
+    "intro": [
+        "<h5>Divirta-se!</h5>",
+        "<p>Agora você pode compartilhar com seus amigos um link para a rota. ",
+        "Basta pressionar o botão e copiar o endereço.</p>"
+    ],
+    "width": 250,
+    "position": "right"
+
+}]

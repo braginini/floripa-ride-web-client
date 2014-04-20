@@ -336,3 +336,11 @@ Ext.define("Ext.locale.en.Component", {
     override: "Ext.Component"
 });
 
+Ext.define('Ext.locale.en.ux.Intro', {
+    override: 'Ext.ux.Intro',
+    nextLabel: 'Next &rarr;',
+    prevLabel: '&larr; Back',
+    skipLabel: 'Skip',
+    doneLabel: 'Done'
+});
+

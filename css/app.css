@@ -417,6 +417,10 @@ a:focus, .btn:focus, div {
 .introjs-tooltip {
     max-width: 450px;
 }
+
+.introjs-tooltiptext p {
+    max-width: 430px;
+}
 /****************** Bus agency styles *******************/
 .agency_TranSol {
     color: #3399CC;
