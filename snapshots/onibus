@@ -1,0 +1,2179 @@
+<h3>Descrição</h3>
+<p>A primeira aplicativo de Florianópolis, que lhe permite chegar rapidamente qualquer ponto da cidade de ônibus.
+    " FloripaRide será também útil para aqueles que usam carro ou bicicleta.</p>
+<p>Por exemplo, você pode facilmente chegar a cada uma das 42 praias a partir do centro da cidade.</p>
+<h5>Principais características do aplicativo:</h5>
+<ol>
+<li>Criação da rota entre quaisquer pontos da cidade</li>
+<li>Rotas são construídas de acordo com um calendário real de ônibus</li>
+<li>A aplicação mostra informações detalhadas de sua viagem:</li>
+<ul>
+    <li> Tempo de viagem</li>
+    <li> Distância a percorrer</li>
+    <li> Transferências</li>
+    <li> Números de ônibus</li>
+    <li> Tempo de chegada prevista</li>
+    <li> Tempo de chegada prevista</li>,
+    </ul>
+<li>Nomes de pontos de ônibus e muitos mais</li>
+</ol>
+
+<p><strong>Horário de Ônibus:</strong></p>
+<p>Acesse para ver o horário:</p>
+<p><a href="http://portal.pmf.sc.gov.br/servicos/index.php?pagina=onibus" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://portal.pmf.sc.gov.br']);" rel="nofollow" target="_blank">Linhas municipais, que compõem o Sistema Integrado de Transporte de Florianópolis</a> (Prefeitura Municipal de Florianópolis).</p>
+<p><a href="http://www.passerapido.com.br/index.php?secao=horario.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Pesquisa por empresa &#8211; Grande Florianópolis</a> (Setuf &#8211; Sindicato das Empresas de Transporte Urbano de Passageiros da Grande Florianópolis).</p>
+<p><strong>Conheça as Empresas de Transporte Urbano em Florianópolis</strong></p>
+<p>Saiba como funcionam as empresas e em quais linhas/regiões elas operam. Assim facilita seu trabalho na pesquisa de horários:</p>
+<p><strong>Ilha:</strong></p>
+<p><span style="color: #888888;"><strong>Transol:</strong></span> A empresa opera principalmente pelas regiões <a href="http://www.guiafloripa.com.br/cidade/bairros#regiao_central" >Centra</a>l e <a title="Bairros da Região Leste" href="http://www.guiafloripa.com.br/cidade/regiao_leste"  target="_blank">Leste da Ilha</a>, contudo abrange o <a title="Bairros da Região Norte" href="http://www.guiafloripa.com.br/cidade/regiao_norte"  target="_blank">Norte da Ilha</a> também. São ônibus de cor azul, com o nome da empresa estampado em sua lateral.</p>
+<p>Os ônibus da empresa passam pelo Centro e por bairros próximos ao Centro. São elas: <a title="Trindade" href="http://www.guiafloripa.com.br/galeria/bairros/trindade"  target="_blank">Trindade</a>, Santa Mônica, Parque São Jorge, Itacorubi, Córrego Grande, Jardim Anchieta, Agronômica, Pantanal, Carvoeira, Serrinha e Morros da Cruz, Penitenciária, do Horácio, do Quilombo e Nova Trento.</p>
+<p>As linhas que abrangem a região Leste: Lagoa da Conceição, Canto dos Araçás, Praia Mole, Barra da Lagoa e Joaquina.</p>
+<p>As linhas que abrangem a região Norte: Monte Verde, Cacupé, Santo Antônio de Lisboa, Sambaqui, Saco dos Limões, João Paulo, Canasvieiras. Há também linhas especiais que passam pelas universidades Ufsc, Udesc e Unica, além dos madrugadões.</p>
+<p><span style="color: #888888;"><strong>Canasvieiras:</strong></span> A empresa opera principalmente pelo Norte da Ilha, contudo há linhas que fazem ligação com a Lagoa da Conceição. São ônibus de cor verde e branca, com o nome da empresa estampado em sua lateral.</p>
+<p>Os ônibus da empresa passam pela região Norte. São elas: Santo Antônio, Canasvieiras, Cachoeira, Ingleses, Ponta das Canas, Praia Brava, Rio Vermelho, Sítio de Baixo, Vargem Grande, Vargem Pequena, Vargem do Bom Jesus, Daniela, Jurerê, Ratones, Moçambique, Santinho e Forte. Há linhas que ligam a Lagoa da Conceição com o Canasvieiras, além dos madrugadões.</p>
+<p><span style="color: #888888;"><strong>Insular:</strong></span> A empresa opera principalmente pelo Sul da Ilha, fazendo ligação com os bairros do Centro, Trindade e Lagoa da Conceição. São de cor verde-piscina, com o nome da empresa estampado em verde-escuro na lateral dos ônibus.</p>
+<p>Os ônibus da empresa passam pela região Sul e fazem ligação com Centro, Trindade e Lagoa da Conceição. São elas: Costa de Dentro, Ribeirão da Ilha, Costeira do Pirajubaé, Rio Tavares, Porto da Lagoa, Tapera, Campeche, Castanheiras, Trevo do Erasmo, Saco dos Limões, Armação, Caieira, Costa de Cima, Costa de Dentro e Pântano do Sul. Há também a linha Madrugadão Sul.</p>
+<p><strong>Ilha-Continente:</strong></p>
+<p><span style="color: #888888;"><strong>Estrela:</strong></span> A empresa faz a ligação Ilha-Continente e seus ônibus posseum a cor verde escura, com o nome da empresa estampado em amarelo na lateral.</p>
+<p>Os ônibus da empresa passam por todo o Continente, fazendo a ligação com a Ilha. São eles: Abraão, Monte Cristo, Capoeiras, Chico Mendes, Bom Abrigo, Itaguaçu, Morro do Geraldo, Promorar, Ivo Silveira, Vila Aparecida, Vila São João, Serraria, Forquilhinhas, Barreiros, Sede, Jardim Pinheiros, Kobrasol, Vila Formosa, Lisboa, Potecas, além de uma linha especial que abrange a Ufsc.</p>
+<p>Há também as linhas que ligam Florianópolis com outras cidades da Grande Florianópolis. São elas: Potecas, Foquilhinhas, Kobrasol, São Luiz, Santos Saraiva, Campinas, Ceasa, Dona Zenaide, Bahamas, Los Angeles e Parque Residencial Lisboa.</p>
+<p><span style="color: #888888;"><strong>Jotur:</strong></span> A empresa trabalha principalmente fazendo a ligação das cidades São José e Palhoça com à Ilha. São de cor verde e branca e também dourada, com o nome da empresa estampado em verde na lateral do veículo.</p>
+<p>São estas as linhas que a empresa abrange: Aririú, Barreiros, Hospital Regional, Bela Vista, Caminho Novo, São José, Fazenda Jomar, Guarda do Cubatão, Jaqueira, Jardim Aquarius, Jardim Eldorado, Madri, Passa Vinte, Pedra Branca, Ponte do Imaruim, São Sebastião, Unisul, Forquilhinhas, Serraria, Kobrasol, Barreiros, Ponta de Baixo e Irineu Comelli.</p>
+<p><span style="color: #888888;"><strong>Emflotur/Biguaçu:</strong></span> A empresa trabalha com o percurso que também liga a Ilha ao Continente. São de cor azul, com o nome estampado na lateral dos veículos.</p>
+<p>São estas as linhas que a empresa trabalha: Aracy Vaz Callado, Bairro de Fátima, Balneário, Abraão, Coloninha, Jardim Atlântico, além de fazer ligação com a Ufsc.</p>
+<p><strong>Florianópolis possui três tipos de transporte urbano:</strong></p>
+<p><a title="Sistema Integrado de Transporte" href="http://www.guiafloripa.com.br/cidade/informacoes-gerais-sobre-florianopolis/sistema-integrado-de-transporte"  target="_blank">Sistema Integrado de Transporte</a>: formado pelos seis Terminais de Integração da cidade e pelas linhas de ônibus convencionais. <a href="http://www.pmf.sc.gov.br/servicos/index.php?pagina=onibus" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.pmf.sc.gov.br']);" rel="nofollow" target="_blank">Consulte os horários</a>.</p>
+<p><a title="Transporte Executivo" href="http://www.guiafloripa.com.br/cidade/informacoes-gerais-sobre-florianopolis/transporte-executivo"  target="_blank">Transporte Executivo<strong>:</strong></a> linhas de micro-ônibus com ar-condicionado e sem pontos de parada definidos. Abrangem praticamente toda a Ilha.</p>
+<p><a title="Transporte Hidroviário" href="http://www.guiafloripa.com.br/cidade/informacoes-gerais-sobre-florianopolis/transporte-hidroviario"  target="_blank">Transporte Hidroviário</a>: barcas que fazem o trajeto Lagoa da Conceição / Costa da Lagoa / Lagoa da Conceição.</p>
+<p><strong>Como Pagar</strong></p>
+<p><strong><span style="color: #888888;">Dinheiro:</span> </strong>a passagem será paga diretamente ao cobrador no ônibus ou nas catracas dos Terminais de Integração. No caso de o passageiro circular por mais de uma região, pagará as duas passagens integralmente, não tendo direito à integração tarifária.</p>
+<p>Consulte o valor, pois há diferenças para determinadas linhas e tipos de transporte.</p>
+<p><span style="color: #888888;"><strong>Passe-Rápido:</strong> </span>é o cartão fornecido pelo Sindicato das Empresas de Transporte Urbano de Passageiros da Grande Florianópolis (Setuf) e que, ao ser mostrado nos equipamentos existentes dentro dos ônibus e nas catracas dos Teminais de Integração, valida a passagem. O cartão traz informações sobre o crédito do passageiro e pode ser recarregado nos postos do Setuf. No caso de o passageiro circular por mais de uma região, pagará a tarifa da passagem apenas uma vez.</p>
+<p>O usuário tem 30 minutos para sair de uma linha e entrar em outra pagando apenas uma passagem.</p>
+<p>Há cinco tipos de cartões de Passe-rápido: <a href="http://www.passerapido.com.br/index.php?secao=c_cidadao.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Cidadão</a>, <a href="http://www.passerapido.com.br/index.php?secao=c_estudante.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Estudante</a>, <a href="http://www.passerapido.com.br/index.php?secao=c_especial.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Especiais</a>, <a href="http://www.passerapido.com.br/index.php?secao=turista.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Turista</a>, <a href="http://www.passerapido.com.br/index.php?secao=c_vt.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">Vale-transporte</a>.</p>
+<p>O Passe-rápido pode ser adquirido no Setuf do Terminal de Integração Centro e recarregado em qualquer terminal. A primeira via do Passe-rápido é gratuita.</p>
+<p>Mais informações pelo telefone 3251-4100.</p>
+<p><strong>Informações e Compra de Passes</strong></p>
+<p><strong><span style="color: #888888;">TiCen</span></strong></p>
+<p>Setuf &#8211; Sindicato das Empresas de Transporte Urbano de Passageiros da Grande Florianópolis<br />
+    Av. Paulo Fontes, 701 &#8211; Terminal de Integração Centro.<br />
+    De segunda a sexta, das 8h às 18h.<br />
+    48 3251-4114.</p>
+<p>Atendimento: De segunda a sexta-feira, das 8h às 18h.</p>
+<p>Venda de passe: De segunda a sábado, das 7h às 22h30.</p>
+<p><span style="color: #888888;"><strong>Outros Terminais</strong></span></p>
+<p>Todos os dias, das 7h às 22h30.</p>
+<p><span style="color: #888888;"><strong>Pela internet</strong></span></p>
+<p>No <a href="http://www.passerapido.com.br/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.passerapido.com.br']);" rel="nofollow" target="_blank">site</a> Passe-rápido.</p>
+<p><strong>Reclamações e Sugestões:</strong></p>
+<p>Núcleo de Transporte Urbano<br />
+    48 3324-1517.</p>
+
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#fdf0da" class="transportes" align="center">
+    <td width="108"><h1>Número</h1></td>
+    <td width="207" align="left"><h1>Linha</h1><h2> (horário + itinerário)</h2></td>
+    <td width="120" align="left"><h1>Empresa</h1></td>
+    <td width="120" align="left"><h1>Origem</h1></td>
+    <td width="120" align="left"><h1>Destino</h1></td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=327" target="_blank">665</a></td>
+    <td align="left"><a href="linha_det.php?codigo=327" target="_blank">ABRAÃO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=362" target="_blank">949</a></td>
+    <td align="left"><a href="linha_det.php?codigo=362" target="_blank">ABRAÃO/UFSC</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">UFSC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=353" target="_blank">849</a></td>
+    <td align="left"><a href="linha_det.php?codigo=353" target="_blank">ABRAÃO/UFSC</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">UDESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=206" target="_blank">131</a></td>
+    <td align="left"><a href="linha_det.php?codigo=206" target="_blank">AGRONÔMICA VIA GAMA D'EÇA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=207" target="_blank">132</a></td>
+    <td align="left"><a href="linha_det.php?codigo=207" target="_blank">AGRONÔMICA VIA GAMA D'EÇA - HI [HOSPITAL INFANTIL]</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=208" target="_blank">133</a></td>
+    <td align="left"><a href="linha_det.php?codigo=208" target="_blank">AGRONÔMICA VIA MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=334" target="_blank">762</a></td>
+    <td align="left"><a href="linha_det.php?codigo=334" target="_blank">ÂNGELO LAPORTA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Centro</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=322" target="_blank">660</a></td>
+    <td align="left"><a href="linha_det.php?codigo=322" target="_blank">ARACI VAZ CALLADO</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Jardim Atlântico</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=305" target="_blank">560</a></td>
+    <td align="left"><a href="linha_det.php?codigo=305" target="_blank">ARMAÇÃO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">SC406</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=348" target="_blank">844</a></td>
+    <td align="left"><a href="linha_det.php?codigo=348" target="_blank">BAIRRO DE FÁTIMA</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=323" target="_blank">661</a></td>
+    <td align="left"><a href="linha_det.php?codigo=323" target="_blank">BALNEÁRIO</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Balneário</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=273" target="_blank">276</a></td>
+    <td align="left"><a href="linha_det.php?codigo=273" target="_blank">BALNEÁRIO CANASVIEIRAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=392" target="_blank">277</a></td>
+    <td align="left"><a href="linha_det.php?codigo=392" target="_blank">BALNEÁRIO INGLESES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=198" target="_blank">10</a></td>
+    <td align="left"><a href="linha_det.php?codigo=198" target="_blank">BARCA DA COSTA DA LAGOA</a></td>
+    <td align="left"><a href="http://portal.pmf.sc.gov.br/entidades/transportes/" target="_blank">COOPERCOSTA</a></td>
+    <td align="left">Costa da Lagoa</td>
+    <td align="left">Lagoa da Conceição</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=285" target="_blank">360</a></td>
+    <td align="left"><a href="linha_det.php?codigo=285" target="_blank">BARRA DA LAGOA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Barra da Lagoa</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=384" target="_blank">D360</a></td>
+    <td align="left"><a href="linha_det.php?codigo=384" target="_blank">BARRA DA LAGOA - DIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Barra da Lagoa</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=209" target="_blank">134</a></td>
+    <td align="left"><a href="linha_det.php?codigo=209" target="_blank">BEIRA-MAR NORTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=380" target="_blank">D260</a></td>
+    <td align="left"><a href="linha_det.php?codigo=380" target="_blank">CACHOEIRA DO BOM JESUS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Bairro</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=257" target="_blank">260</a></td>
+    <td align="left"><a href="linha_det.php?codigo=257" target="_blank">CACHOEIRA DO BOM JESUS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=408" target="_blank">280</a></td>
+    <td align="left"><a href="linha_det.php?codigo=408" target="_blank">CACHOEIRA ESCOLAR</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Bairro</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=350" target="_blank">846</a></td>
+    <td align="left"><a href="linha_det.php?codigo=350" target="_blank">CACUPÉ</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=387" target="_blank">D846</a></td>
+    <td align="left"><a href="linha_det.php?codigo=387" target="_blank">CACUPÉ DIRETA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">CENTRO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=240" target="_blank">181</a></td>
+    <td align="left"><a href="linha_det.php?codigo=240" target="_blank">CACUPÉ/JOÃO PAULO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Rod. João Paulo</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=306" target="_blank">561</a></td>
+    <td align="left"><a href="linha_det.php?codigo=306" target="_blank">CAEIRA DA BARRA DO SUL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Caeira da Barra do Sul</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=335" target="_blank">763</a></td>
+    <td align="left"><a href="linha_det.php?codigo=335" target="_blank">CAEIRA DO SACO DOS LIMÕES</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Caeira do Saco dos Limões</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=309" target="_blank">566</a></td>
+    <td align="left"><a href="linha_det.php?codigo=309" target="_blank">CAEIRA VIA TAPERA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Ribeirão da Ilha</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=229" target="_blank">170</a></td>
+    <td align="left"><a href="linha_det.php?codigo=229" target="_blank">CAMINHO DA CRUZ VIA JOÃO PAULO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Monte Verde</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=295" target="_blank">462</a></td>
+    <td align="left"><a href="linha_det.php?codigo=295" target="_blank">CAMPECHE</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=428" target="_blank">472</a></td>
+    <td align="left"><a href="linha_det.php?codigo=428" target="_blank">CAMPECHE VIA CAPELA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=249" target="_blank">210</a></td>
+    <td align="left"><a href="linha_det.php?codigo=249" target="_blank">CANASVIEIRAS - DIRETO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=346" target="_blank">842</a></td>
+    <td align="left"><a href="linha_det.php?codigo=346" target="_blank">CANASVIEIRAS - LAGOA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=344" target="_blank">840</a></td>
+    <td align="left"><a href="linha_det.php?codigo=344" target="_blank">CANASVIEIRAS - LAGOA DA CONCEIÇÃO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=354" target="_blank">940</a></td>
+    <td align="left"><a href="linha_det.php?codigo=354" target="_blank">CANASVIEIRAS - SANTO ANTÔNIO VIA JURERÊ</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=355" target="_blank">941</a></td>
+    <td align="left"><a href="linha_det.php?codigo=355" target="_blank">CANASVIEIRAS - SANTO ANTÔNIO VIA RATONES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=252" target="_blank">230</a></td>
+    <td align="left"><a href="linha_det.php?codigo=252" target="_blank">CANASVIEIRAS VIA GAMA D'EÇA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=253" target="_blank">231</a></td>
+    <td align="left"><a href="linha_det.php?codigo=253" target="_blank">CANASVIEIRAS VIA MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=251" target="_blank">221</a></td>
+    <td align="left"><a href="linha_det.php?codigo=251" target="_blank">CANASVIEIRAS VIA MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=416" target="_blank">291</a></td>
+    <td align="left"><a href="linha_det.php?codigo=416" target="_blank">CANASVIEIRAS/JURERÊ</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Canasvieiras</td>
+    <td align="left">Canasvieiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=254" target="_blank">233</a></td>
+    <td align="left"><a href="linha_det.php?codigo=254" target="_blank">CANASVIEIRAS/TRINDADE</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=286" target="_blank">362</a></td>
+    <td align="left"><a href="linha_det.php?codigo=286" target="_blank">CANTO DOS ARAÇAS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=258" target="_blank">261</a></td>
+    <td align="left"><a href="linha_det.php?codigo=258" target="_blank">CAPIVARI</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">Capivari</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=272" target="_blank">275</a></td>
+    <td align="left"><a href="linha_det.php?codigo=272" target="_blank">CAPIVARI VIA JOÃO GUALBERTO SOARES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">Capivari</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=320" target="_blank">631</a></td>
+    <td align="left"><a href="linha_det.php?codigo=320" target="_blank">CAPOEIRAS</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=321" target="_blank">632</a></td>
+    <td align="left"><a href="linha_det.php?codigo=321" target="_blank">CAPOEIRAS VIA IVO SILVEIRA</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=360" target="_blank">947</a></td>
+    <td align="left"><a href="linha_det.php?codigo=360" target="_blank">CAPOEIRAS/UFSC</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">UFSC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=361" target="_blank">948</a></td>
+    <td align="left"><a href="linha_det.php?codigo=361" target="_blank">CAPOEIRAS/UFSC</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">UDESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=296" target="_blank">463</a></td>
+    <td align="left"><a href="linha_det.php?codigo=296" target="_blank">CASTANHEIRAS VIA EUCALIPTOS</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=297" target="_blank">464</a></td>
+    <td align="left"><a href="linha_det.php?codigo=297" target="_blank">CASTANHEIRAS VIA GRAMAL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=215" target="_blank">151</a></td>
+    <td align="left"><a href="linha_det.php?codigo=215" target="_blank">CENTRO ADMINISTRATIVO VIA BEIRA MAR</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Centro Administrativo</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=422" target="_blank">156</a></td>
+    <td align="left"><a href="linha_det.php?codigo=422" target="_blank">CENTRO ADMINISTRATIVO VIA MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Centro Administrativo</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=343" target="_blank">772</a></td>
+    <td align="left"><a href="linha_det.php?codigo=343" target="_blank">CHICO MENDES</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Chico Mendes</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=315" target="_blank">605</a></td>
+    <td align="left"><a href="linha_det.php?codigo=315" target="_blank">CIRCULAR ABRAÃO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">Abraão</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=318" target="_blank">608</a></td>
+    <td align="left"><a href="linha_det.php?codigo=318" target="_blank">CIRCULAR ABRAÃO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">Abraão</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=311" target="_blank">601</a></td>
+    <td align="left"><a href="linha_det.php?codigo=311" target="_blank">CIRCULAR ABRAÃO</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Abraão</td>
+    <td align="left">Abraão</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=259" target="_blank">262</a></td>
+    <td align="left"><a href="linha_det.php?codigo=259" target="_blank">CIRCULAR CANASVIEIRAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=201" target="_blank">101</a></td>
+    <td align="left"><a href="linha_det.php?codigo=201" target="_blank">CIRCULAR CENTRO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=316" target="_blank">606</a></td>
+    <td align="left"><a href="linha_det.php?codigo=316" target="_blank">CIRCULAR CONTINENTE</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=312" target="_blank">602</a></td>
+    <td align="left"><a href="linha_det.php?codigo=312" target="_blank">CIRCULAR CONTINENTE</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=313" target="_blank">603</a></td>
+    <td align="left"><a href="linha_det.php?codigo=313" target="_blank">CIRCULAR CONTINENTE VIA BIBLIOTECA PÚBLICA</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=317" target="_blank">607</a></td>
+    <td align="left"><a href="linha_det.php?codigo=317" target="_blank">CIRCULAR CONTINENTE VIA BIBLIOTECA PÚBLICA</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=275" target="_blank">282</a></td>
+    <td align="left"><a href="linha_det.php?codigo=275" target="_blank">CIRCULAR VARGEM PEQUENA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=325" target="_blank">663</a></td>
+    <td align="left"><a href="linha_det.php?codigo=325" target="_blank">COLONINHA</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=319" target="_blank">630</a></td>
+    <td align="left"><a href="linha_det.php?codigo=319" target="_blank">CORREDOR CONTINENTE</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=245" target="_blank">186</a></td>
+    <td align="left"><a href="linha_det.php?codigo=245" target="_blank">CORREDOR SUDOESTE - SEMIDIRETO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Aeroporto</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=242" target="_blank">183</a></td>
+    <td align="left"><a href="linha_det.php?codigo=242" target="_blank">CORREDOR SUDOESTE - VIA TISAC</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Aeroporto</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=222" target="_blank">163</a></td>
+    <td align="left"><a href="linha_det.php?codigo=222" target="_blank">CÓRREGO GRANDE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Subestação CELESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=377" target="_blank">D163</a></td>
+    <td align="left"><a href="linha_det.php?codigo=377" target="_blank">CÓRREGO GRANDE - DIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Córrego Grande</td>
+    <td align="left">Córrego Grande</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=223" target="_blank">164</a></td>
+    <td align="left"><a href="linha_det.php?codigo=223" target="_blank">CÓRREGO GRANDE - POÇÃO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Poção</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=246" target="_blank">187</a></td>
+    <td align="left"><a href="linha_det.php?codigo=246" target="_blank">CÓRREGO GRANDE VIA BEIRA MAR</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Subestação CELESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=307" target="_blank">562</a></td>
+    <td align="left"><a href="linha_det.php?codigo=307" target="_blank">COSTA DE CIMA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=308" target="_blank">563</a></td>
+    <td align="left"><a href="linha_det.php?codigo=308" target="_blank">COSTA DE DENTRO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=385" target="_blank">D563</a></td>
+    <td align="left"><a href="linha_det.php?codigo=385" target="_blank">COSTA DE DENTRO - DIRETO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=274" target="_blank">281</a></td>
+    <td align="left"><a href="linha_det.php?codigo=274" target="_blank">COSTA DO MOÇAMBIQUE</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Travessão</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=216" target="_blank">153</a></td>
+    <td align="left"><a href="linha_det.php?codigo=216" target="_blank">COSTEIRA DO PIRAJUBAÉ</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Costeira do Pirajubaé</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=268" target="_blank">271</a></td>
+    <td align="left"><a href="linha_det.php?codigo=268" target="_blank">DANIELA VIA JURERÊ</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Daniela</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=373" target="_blank">6120</a></td>
+    <td align="left"><a href="linha_det.php?codigo=373" target="_blank">EXEC.AEROPORTO/CORREDOR SUDOESTE</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Aeroporto</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=374" target="_blank">6220</a></td>
+    <td align="left"><a href="linha_det.php?codigo=374" target="_blank">EXECUTIVO ABRAÃO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=371" target="_blank">2120</a></td>
+    <td align="left"><a href="linha_det.php?codigo=371" target="_blank">EXECUTIVO BARRA DA LAGOA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Barra da Lagoa</td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=375" target="_blank">6221</a></td>
+    <td align="left"><a href="linha_det.php?codigo=375" target="_blank">EXECUTIVO BOM ABRIGO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">Capoeiras</td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=421" target="_blank">4124</a></td>
+    <td align="left"><a href="linha_det.php?codigo=421" target="_blank">EXECUTIVO CAIEIRA DA BARRA DO SUL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Caieira da Barra do Sul</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=389" target="_blank">4122</a></td>
+    <td align="left"><a href="linha_det.php?codigo=389" target="_blank">EXECUTIVO CAMPECHE</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Campeche</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=367" target="_blank">1120</a></td>
+    <td align="left"><a href="linha_det.php?codigo=367" target="_blank">EXECUTIVO CANASVIEIRAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Bairro</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=425" target="_blank">4125</a></td>
+    <td align="left"><a href="linha_det.php?codigo=425" target="_blank">EXECUTIVO CASTANHEIRAS</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Campeche</td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=423" target="_blank">1114</a></td>
+    <td align="left"><a href="linha_det.php?codigo=423" target="_blank">EXECUTIVO CÓRREGO GRANDE MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+    <td align="left">Córrego Grande</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=365" target="_blank">1115</a></td>
+    <td align="left"><a href="linha_det.php?codigo=365" target="_blank">EXECUTIVO CÓRREGO GRANDE VIA GAMA D´EÇA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Córrego Grande</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=430" target="_blank">1128</a></td>
+    <td align="left"><a href="linha_det.php?codigo=430" target="_blank">EXECUTIVO COSTA DO MOÇAMBIQUE </a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Rio Vermelho</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=451" target="_blank">1127</a></td>
+    <td align="left"><a href="linha_det.php?codigo=451" target="_blank">EXECUTIVO GAIVOTAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Ingleses</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=368" target="_blank">1121</a></td>
+    <td align="left"><a href="linha_det.php?codigo=368" target="_blank">EXECUTIVO INGLESES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">BAIRRO</td>
+    <td align="left">CENTRO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=376" target="_blank">7220</a></td>
+    <td align="left"><a href="linha_det.php?codigo=376" target="_blank">EXECUTIVO JARDIM ATLÂNTICO</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">Centro</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=366" target="_blank">1117</a></td>
+    <td align="left"><a href="linha_det.php?codigo=366" target="_blank">EXECUTIVO JOÃO PAULO VIA CENTRO ADMINISTRATIVO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">João Paulo</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=410" target="_blank">1123</a></td>
+    <td align="left"><a href="linha_det.php?codigo=410" target="_blank">EXECUTIVO JURERÊ</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Bairro</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=424" target="_blank">2123</a></td>
+    <td align="left"><a href="linha_det.php?codigo=424" target="_blank">EXECUTIVO LAGOA DA CONCEIÇÃO </a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Joaquina</td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=388" target="_blank">4120</a></td>
+    <td align="left"><a href="linha_det.php?codigo=388" target="_blank">EXECUTIVO PÂNTANO DO SUL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=364" target="_blank">1113</a></td>
+    <td align="left"><a href="linha_det.php?codigo=364" target="_blank">EXECUTIVO PARQUE SÃO JORGE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Parque São Jorge</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=369" target="_blank">1122</a></td>
+    <td align="left"><a href="linha_det.php?codigo=369" target="_blank">EXECUTIVO PONTA DAS CANAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Ponta das Canas</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=407" target="_blank">4123</a></td>
+    <td align="left"><a href="linha_det.php?codigo=407" target="_blank">EXECUTIVO RIBEIRÃO DA ILHA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Ribeirão da Ilha</td>
+    <td align="left">Ribeirão da Ilha</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=370" target="_blank">1125</a></td>
+    <td align="left"><a href="linha_det.php?codigo=370" target="_blank">EXECUTIVO RIO VERMELHO - SITIO DE CIMA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">BAIRRO</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=443" target="_blank">2124</a></td>
+    <td align="left"><a href="linha_det.php?codigo=443" target="_blank">EXECUTIVO SAMBAQUI</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Centro</td>
+    <td align="left">Sambaqui</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=363" target="_blank">1112</a></td>
+    <td align="left"><a href="linha_det.php?codigo=363" target="_blank">EXECUTIVO SANTA MÔNICA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Santa Mônica</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=429" target="_blank">4126</a></td>
+    <td align="left"><a href="linha_det.php?codigo=429" target="_blank">EXECUTIVO TAPERA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Tapera</td>
+    <td align="left">Terminal Cidade de Florianópolis</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=256" target="_blank">250</a></td>
+    <td align="left"><a href="linha_det.php?codigo=256" target="_blank">FORTE/CANASVIEIRAS </a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Forte</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=260" target="_blank">263</a></td>
+    <td align="left"><a href="linha_det.php?codigo=260" target="_blank">GAIVOTA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">Gaivotas </td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=204" target="_blank">120</a></td>
+    <td align="left"><a href="linha_det.php?codigo=204" target="_blank">GAMA D'EÇA - SEMIDIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=261" target="_blank">264</a></td>
+    <td align="left"><a href="linha_det.php?codigo=261" target="_blank">INGLESES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Santinho </td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=381" target="_blank">D264</a></td>
+    <td align="left"><a href="linha_det.php?codigo=381" target="_blank">INGLESES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Santinho</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=248" target="_blank">294</a></td>
+    <td align="left"><a href="linha_det.php?codigo=248" target="_blank">INTERPRAIAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Santinho</td>
+    <td align="left">Forte</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=224" target="_blank">165</a></td>
+    <td align="left"><a href="linha_det.php?codigo=224" target="_blank">ITACORUBI</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Itacorubi</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=326" target="_blank">664</a></td>
+    <td align="left"><a href="linha_det.php?codigo=326" target="_blank">ITAGUAÇU</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Itaguaçu</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=225" target="_blank">166</a></td>
+    <td align="left"><a href="linha_det.php?codigo=225" target="_blank">JARDIM ANCHIETA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Pr. Pe. José de Anchieta</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=359" target="_blank">946</a></td>
+    <td align="left"><a href="linha_det.php?codigo=359" target="_blank">JARDIM ATLÂNTICO/ UFSC</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Jardim Atlantico</td>
+    <td align="left">UDESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=226" target="_blank">167</a></td>
+    <td align="left"><a href="linha_det.php?codigo=226" target="_blank">JOÃO PAULO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">João Paulo</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=287" target="_blank">363</a></td>
+    <td align="left"><a href="linha_det.php?codigo=287" target="_blank">JOAQUINA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Joaquina</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=269" target="_blank">272</a></td>
+    <td align="left"><a href="linha_det.php?codigo=269" target="_blank">JURERÊ</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=281" target="_blank">330</a></td>
+    <td align="left"><a href="linha_det.php?codigo=281" target="_blank">LAGOA DA CONCEIÇÃO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=279" target="_blank">311</a></td>
+    <td align="left"><a href="linha_det.php?codigo=279" target="_blank">LAGOA DA CONCEIÇÃO - DIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=280" target="_blank">320</a></td>
+    <td align="left"><a href="linha_det.php?codigo=280" target="_blank">LAGOA DA CONCEIÇÃO - SEMIDIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=349" target="_blank">845</a></td>
+    <td align="left"><a href="linha_det.php?codigo=349" target="_blank">LAGOA DA CONCEIÇÃO VIA CÓRREGO GRANDE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=347" target="_blank">843</a></td>
+    <td align="left"><a href="linha_det.php?codigo=347" target="_blank">LAGOA/RIO TAVARES</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TLAG</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=345" target="_blank">841</a></td>
+    <td align="left"><a href="linha_det.php?codigo=345" target="_blank">LAGOA/RIO TAVARES</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=200" target="_blank">100</a></td>
+    <td align="left"><a href="linha_det.php?codigo=200" target="_blank">MADRUGADÃO CENTRO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=314" target="_blank">604</a></td>
+    <td align="left"><a href="linha_det.php?codigo=314" target="_blank">MADRUGADÃO CONTINENTE</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=310" target="_blank">600</a></td>
+    <td align="left"><a href="linha_det.php?codigo=310" target="_blank">MADRUGADÃO CONTINENTE</a></td>
+    <td align="left"><a href="http://www.biguacutransportes.com.br/" target="_blank">EMFLOTUR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=277" target="_blank">300</a></td>
+    <td align="left"><a href="linha_det.php?codigo=277" target="_blank">MADRUGADÃO LESTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Barra da Lagoa</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=247" target="_blank">200</a></td>
+    <td align="left"><a href="linha_det.php?codigo=247" target="_blank">MADRUGADÃO NORTE</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">INGLESES</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=303" target="_blank">500</a></td>
+    <td align="left"><a href="linha_det.php?codigo=303" target="_blank">MADRUGADÃO SUL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=304" target="_blank">501</a></td>
+    <td align="left"><a href="linha_det.php?codigo=304" target="_blank">MADRUGADÃO SUL VIA TAPERA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=205" target="_blank">121</a></td>
+    <td align="left"><a href="linha_det.php?codigo=205" target="_blank">MAURO RAMOS - SEMIDIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=331" target="_blank">670</a></td>
+    <td align="left"><a href="linha_det.php?codigo=331" target="_blank">MONTE CRISTO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Monte Cristo</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=336" target="_blank">764</a></td>
+    <td align="left"><a href="linha_det.php?codigo=336" target="_blank">MONTE SERRAT</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Monte Serrat</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=378" target="_blank">D168</a></td>
+    <td align="left"><a href="linha_det.php?codigo=378" target="_blank">MONTE VERDE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">MonteVerde</td>
+    <td align="left">Monte Verde</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=227" target="_blank">168</a></td>
+    <td align="left"><a href="linha_det.php?codigo=227" target="_blank">MONTE VERDE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Monte Verde</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=228" target="_blank">169</a></td>
+    <td align="left"><a href="linha_det.php?codigo=228" target="_blank">MONTE VERDE VIA MANÉ VICENTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Monte Verde</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=219" target="_blank">160</a></td>
+    <td align="left"><a href="linha_det.php?codigo=219" target="_blank">MORRO DA CRUZ</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro da Cruz</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=220" target="_blank">161</a></td>
+    <td align="left"><a href="linha_det.php?codigo=220" target="_blank">MORRO DA PENITENCIÁRIA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro da Penitenciária</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=337" target="_blank">765</a></td>
+    <td align="left"><a href="linha_det.php?codigo=337" target="_blank">MORRO DA QUEIMADA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro da Queimada</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=338" target="_blank">766</a></td>
+    <td align="left"><a href="linha_det.php?codigo=338" target="_blank">MORRO DO 25</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro do 25</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=342" target="_blank">770</a></td>
+    <td align="left"><a href="linha_det.php?codigo=342" target="_blank">MORRO DO 25 VIA GAMA D'EÇA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=332" target="_blank">760</a></td>
+    <td align="left"><a href="linha_det.php?codigo=332" target="_blank">MORRO DO GERALDO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro do Geraldo</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=339" target="_blank">767</a></td>
+    <td align="left"><a href="linha_det.php?codigo=339" target="_blank">MORRO DO HORÁCIO VIA GAMA D'EÇA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro do Horácio</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=340" target="_blank">768</a></td>
+    <td align="left"><a href="linha_det.php?codigo=340" target="_blank">MORRO DO HORÁCIO VIA MAURO RAMOS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Morro do Horácio</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=232" target="_blank">173</a></td>
+    <td align="left"><a href="linha_det.php?codigo=232" target="_blank">MORRO DO QUILOMBO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Estação Quilombo</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=341" target="_blank">769</a></td>
+    <td align="left"><a href="linha_det.php?codigo=341" target="_blank">MORRO NOVA TRENTO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Serv. Leopoldo João Custódio</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=288" target="_blank">364</a></td>
+    <td align="left"><a href="linha_det.php?codigo=288" target="_blank">OSNI ORTIGA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TILAG</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=405" target="_blank">564</a></td>
+    <td align="left"><a href="linha_det.php?codigo=405" target="_blank">PÂNTANO DO SUL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Pantano do Sul</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=199" target="_blank">11</a></td>
+    <td align="left"><a href="linha_det.php?codigo=199" target="_blank">PARQUE FLORESTAL</a></td>
+    <td align="left"><a href="http://portal.pmf.sc.gov.br/entidades/transportes/" target="_blank">COOPERCOSTA</a></td>
+    <td align="left">Parque Florestal</td>
+    <td align="left">Costa da Lagoa</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=230" target="_blank">171</a></td>
+    <td align="left"><a href="linha_det.php?codigo=230" target="_blank">PARQUE SÃO JORGE VIA MADRE BENVENUTA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Itacorubi</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=231" target="_blank">172</a></td>
+    <td align="left"><a href="linha_det.php?codigo=231" target="_blank">PARQUE SÃO JORGE VIA SC 404</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Itacorubi</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=262" target="_blank">265</a></td>
+    <td align="left"><a href="linha_det.php?codigo=262" target="_blank">PONTA DAS CANAS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Ingleses</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=293" target="_blank">460</a></td>
+    <td align="left"><a href="linha_det.php?codigo=293" target="_blank">PORTO DA LAGOA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=263" target="_blank">266</a></td>
+    <td align="left"><a href="linha_det.php?codigo=263" target="_blank">PRAIA BRAVA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Praia Brava</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=382" target="_blank">D266</a></td>
+    <td align="left"><a href="linha_det.php?codigo=382" target="_blank">PRAIA BRAVA - DIRETO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Bairro</td>
+    <td align="left">Centro</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=328" target="_blank">667</a></td>
+    <td align="left"><a href="linha_det.php?codigo=328" target="_blank">PROMORAR</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=329" target="_blank">668</a></td>
+    <td align="left"><a href="linha_det.php?codigo=329" target="_blank">PROMORAR VIA IVO SILVEIRA</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Capoeiras</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=270" target="_blank">273</a></td>
+    <td align="left"><a href="linha_det.php?codigo=270" target="_blank">RATONES</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN </td>
+    <td align="left">TISAN </td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=418" target="_blank">565</a></td>
+    <td align="left"><a href="linha_det.php?codigo=418" target="_blank">RIBEIRÃO DA ILHA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Ribeirão da Ilha</td>
+    <td align="left">Ribeirão da Ilha</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=386" target="_blank">D565</a></td>
+    <td align="left"><a href="linha_det.php?codigo=386" target="_blank">RIBEIRÃO DA ILHA</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Ribeirão da Ilha</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=292" target="_blank">430</a></td>
+    <td align="left"><a href="linha_det.php?codigo=292" target="_blank">RIO TAVARES</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=290" target="_blank">410</a></td>
+    <td align="left"><a href="linha_det.php?codigo=290" target="_blank">RIO TAVARES - DIRETO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=264" target="_blank">267</a></td>
+    <td align="left"><a href="linha_det.php?codigo=264" target="_blank">RIO VERMELHO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Rio Vermelho</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=383" target="_blank">D267</a></td>
+    <td align="left"><a href="linha_det.php?codigo=383" target="_blank">RIO VERMELHO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Rio Vermelho</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=271" target="_blank">274</a></td>
+    <td align="left"><a href="linha_det.php?codigo=271" target="_blank">RIO VERMELHO VIA MUQUEM</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Rio Vermelho</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=221" target="_blank">162</a></td>
+    <td align="left"><a href="linha_det.php?codigo=221" target="_blank">SACO DOS LIMÕES</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN </td>
+    <td align="left">Saco dos Limões</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=356" target="_blank">943</a></td>
+    <td align="left"><a href="linha_det.php?codigo=356" target="_blank">SACO DOS LIMÕES/TRINDADE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=357" target="_blank">944</a></td>
+    <td align="left"><a href="linha_det.php?codigo=357" target="_blank">SACO DOS LIMÕES/TRINDADE VIA MADRE BENVENUTA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=237" target="_blank">178</a></td>
+    <td align="left"><a href="linha_det.php?codigo=237" target="_blank">SACO GRANDE RETORNO SC 401</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Trevo do Cacupé</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=235" target="_blank">176</a></td>
+    <td align="left"><a href="linha_det.php?codigo=235" target="_blank">SACO GRANDE VIA HU [HOSPITAL UNIVERSITÁRIO]</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Monte Verde</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=233" target="_blank">174</a></td>
+    <td align="left"><a href="linha_det.php?codigo=233" target="_blank">SACO GRANDE VIA JOÃO PAULO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Saco Grande</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=379" target="_blank">D174</a></td>
+    <td align="left"><a href="linha_det.php?codigo=379" target="_blank">SACO GRANDE VIA JOÃO PAULO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Saco Grande</td>
+    <td align="left">Saco Grande</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=289" target="_blank">365</a></td>
+    <td align="left"><a href="linha_det.php?codigo=289" target="_blank">SAMBAQUI</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Sambaqui </td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=236" target="_blank">177</a></td>
+    <td align="left"><a href="linha_det.php?codigo=236" target="_blank">SANTA MÔNICA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=449" target="_blank">296</a></td>
+    <td align="left"><a href="linha_det.php?codigo=449" target="_blank">SANTINHO ESCOLAR</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Santinho</td>
+    <td align="left">Serv. Três Marias</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=282" target="_blank">331</a></td>
+    <td align="left"><a href="linha_det.php?codigo=282" target="_blank">SANTO ANTÔNIO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=278" target="_blank">310</a></td>
+    <td align="left"><a href="linha_det.php?codigo=278" target="_blank">SANTO ANTÔNIO - DIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=250" target="_blank">212</a></td>
+    <td align="left"><a href="linha_det.php?codigo=250" target="_blank">SANTO ANTÔNIO - DIRETO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TISAN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=283" target="_blank">332</a></td>
+    <td align="left"><a href="linha_det.php?codigo=283" target="_blank">SANTO ANTÔNIO VIA BEIRA MAR</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TISAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=234" target="_blank">175</a></td>
+    <td align="left"><a href="linha_det.php?codigo=234" target="_blank">SC 401 RETORNO SACO GRANDE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Saco Grande</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=238" target="_blank">179</a></td>
+    <td align="left"><a href="linha_det.php?codigo=238" target="_blank">SERRINHA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=265" target="_blank">268</a></td>
+    <td align="left"><a href="linha_det.php?codigo=265" target="_blank">SÍTIO DE BAIXO</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">Sitio de Baixo</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=218" target="_blank">155</a></td>
+    <td align="left"><a href="linha_det.php?codigo=218" target="_blank">SOL NASCENTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Saco Grande</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=299" target="_blank">467</a></td>
+    <td align="left"><a href="linha_det.php?codigo=299" target="_blank">TAPERA VIA SACO DOS LIMÕES</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=294" target="_blank">461</a></td>
+    <td align="left"><a href="linha_det.php?codigo=294" target="_blank">TAPERA VIA TÚNEL</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Tapera</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=300" target="_blank">469</a></td>
+    <td align="left"><a href="linha_det.php?codigo=300" target="_blank">TAPERA/ RIO TAVARES</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=301" target="_blank">470</a></td>
+    <td align="left"><a href="linha_det.php?codigo=301" target="_blank">TAPERA/TITRI</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">Tapera</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=241" target="_blank">182</a></td>
+    <td align="left"><a href="linha_det.php?codigo=241" target="_blank">TECNÓPOLIS</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">Tecnópolis </td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=202" target="_blank">104</a></td>
+    <td align="left"><a href="linha_det.php?codigo=202" target="_blank">TICEN/ITACORUBI</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=203" target="_blank">110</a></td>
+    <td align="left"><a href="linha_det.php?codigo=203" target="_blank">TICEN/TITRI - DIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=351" target="_blank">847</a></td>
+    <td align="left"><a href="linha_det.php?codigo=351" target="_blank">TIRIO/TITRI</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=302" target="_blank">471</a></td>
+    <td align="left"><a href="linha_det.php?codigo=302" target="_blank">TITRI/TAPERA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Tapera</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=284" target="_blank">333</a></td>
+    <td align="left"><a href="linha_det.php?codigo=284" target="_blank">TITRI/TILAG</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TILAG</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=352" target="_blank">848</a></td>
+    <td align="left"><a href="linha_det.php?codigo=352" target="_blank">TITRI/TIRIO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=239" target="_blank">180</a></td>
+    <td align="left"><a href="linha_det.php?codigo=239" target="_blank">TITRI/UFSC</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TITRI</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=444" target="_blank">191</a></td>
+    <td align="left"><a href="linha_det.php?codigo=444" target="_blank">TRANSCAEIRA</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TITRI</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=391" target="_blank">12</a></td>
+    <td align="left"><a href="linha_det.php?codigo=391" target="_blank">TRANSPORTE EXECUTIVO COSTA DA LAGOA</a></td>
+    <td align="left"><a href="http://www.pmf.sc.gov.br/portal/quem/transporte.php" target="_blank">COOPERBARCO</a></td>
+    <td align="left">Lagoa da Conceição</td>
+    <td align="left">Costa da Lagoa</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=395" target="_blank">13</a></td>
+    <td align="left"><a href="linha_det.php?codigo=395" target="_blank">TRANSPORTE EXECUTIVO DA BARRA DA LAGOA</a></td>
+    <td align="left"><a href="http://www.pmf.sc.gov.br/portal/quem/transporte.php" target="_blank">COOPERBARCO</a></td>
+    <td align="left">Barra da Lagoa</td>
+    <td align="left">Lagoa da Conceição</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=266" target="_blank">269</a></td>
+    <td align="left"><a href="linha_det.php?codigo=266" target="_blank">TRAVESSÃO VIA R. ALZIRA ROSA AGUIAR</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=426" target="_blank">284</a></td>
+    <td align="left"><a href="linha_det.php?codigo=426" target="_blank">TRAVESSÃO VIA R. DA INTENDÊNCIA</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=298" target="_blank">466</a></td>
+    <td align="left"><a href="linha_det.php?codigo=298" target="_blank">TREVO DO ERASMO</a></td>
+    <td align="left"><a href="http://www.insulartc.com.br " target="_blank">INSULAR</a></td>
+    <td align="left">TIRIO</td>
+    <td align="left">TIRIO</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=243" target="_blank">184</a></td>
+    <td align="left"><a href="linha_det.php?codigo=243" target="_blank">UDESC VIA BEIRA MAR</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">UDESC</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=244" target="_blank">185</a></td>
+    <td align="left"><a href="linha_det.php?codigo=244" target="_blank">UFSC - SEMIDIRETO</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=217" target="_blank">154</a></td>
+    <td align="left"><a href="linha_det.php?codigo=217" target="_blank">UFSC - SEMIDIRETO - SAÍDA SUL</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=214" target="_blank">150</a></td>
+    <td align="left"><a href="linha_det.php?codigo=214" target="_blank">ÚNICA VIA BEIRA MAR</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">Itacorubi</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=276" target="_blank">283</a></td>
+    <td align="left"><a href="linha_det.php?codigo=276" target="_blank">VARGEM DO BOM JESUS</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">TICAN</td>
+    <td align="left">Vargem do Bom Jesus</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=267" target="_blank">270</a></td>
+    <td align="left"><a href="linha_det.php?codigo=267" target="_blank">VARGEM GRANDE</a></td>
+    <td align="left"><a href="http://www.canasvieirastc.com.br" target="_blank">CANASVIEIRAS</a></td>
+    <td align="left">Vargem Grande</td>
+    <td align="left">TICAN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=450" target="_blank">671</a></td>
+    <td align="left"><a href="linha_det.php?codigo=450" target="_blank">VILA | PROMORAR</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=333" target="_blank">761</a></td>
+    <td align="left"><a href="linha_det.php?codigo=333" target="_blank">VILA APARECIDA</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Vila Aparecida</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=330" target="_blank">669</a></td>
+    <td align="left"><a href="linha_det.php?codigo=330" target="_blank">VILA SÃO JOÃO</a></td>
+    <td align="left"><a href="http://www.tcestrela.com.br/index.htm" target="_blank">ESTRELA</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">Vila São joão</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=210" target="_blank">135</a></td>
+    <td align="left"><a href="linha_det.php?codigo=210" target="_blank">VOLTA AO MORRO CARVOEIRA NORTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=211" target="_blank">136</a></td>
+    <td align="left"><a href="linha_det.php?codigo=211" target="_blank">VOLTA AO MORRO CARVOEIRA SUL</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#f7f7f7" align="center">
+    <td><a href="linha_det.php?codigo=212" target="_blank">137</a></td>
+    <td align="left"><a href="linha_det.php?codigo=212" target="_blank">VOLTA AO MORRO PANTANAL NORTE</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr>
+<tr>
+    <td height="3"></td>
+</tr>
+<tr bgcolor="#ececec" align="center">
+    <td><a href="linha_det.php?codigo=213" target="_blank">138</a></td>
+    <td align="left"><a href="linha_det.php?codigo=213" target="_blank">VOLTA AO MORRO PANTANAL SUL</a></td>
+    <td align="left"><a href="http://www.transoltc.com.br" target="_blank">TRANSOL</a></td>
+    <td align="left">TICEN</td>
+    <td align="left">TICEN</td>
+</tr></table>
